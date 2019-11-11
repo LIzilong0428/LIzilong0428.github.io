@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="format-detection" content="telphone=no, email=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刘贝个人博客会员管理系统</title>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="css/dashboard.css" rel="stylesheet" />
+  <script src="../js/jquery1.12.4.min.js"></script>
+  <script src="../js/jquery.cookie.min.js"></script>
+  <script src="../layui-2.5.4/layui.all.js"></script>
+  <script src="js/vendors/bootstrap.bundle.min.js"></script>
+  <script src="js/core.js"></script>
+  <style>.layui-upload-file{opacity: 0;position: absolute;width: 0;height: 0;}</style>
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <div class="page">
+                    
+	<div class="page-single">
+	    <div class="container">
+			<div class="row">
+				<div class="col col-login mx-auto">
+					<div class="text-center mb-6">
+						<h4>刘贝个人博客会员管理系统v1.0</h4>
+					</div>
+					<form class="card" action="register.html" method="post">
+						<div class="card-body p-6">
+							<div class="card-title">创建新帐户</div>
+							<div class="form-group">
+								<label class="form-label">用户名</label>
+								<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="用户名" id="username" name="username">
+							</div>
+							<div class="form-group">
+								<label class="form-label">密码</label>
+								<input type="password" class="form-control" placeholder="密码" id="password" name="password">
+							</div>
+							<div class="form-group">
+								<label class="form-label">邮箱</label>
+								<input type="text" class="form-control" placeholder="请填写常用邮箱" id="email" name="email" value="">
+							</div>
+							<div class="form-group">
+                          		<label class="form-label">验证码</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="填写邮箱后获取验证码" id="emailcode" name="emailcode">
+									<span class="input-group-append">
+										<button class="btn btn-primary" type="button" onclick="getEmailCode()" id="emailCodeBtn">获取验证码</button>
+									</span>
+								</div>
+	                        </div>
+							<div class="form-group">
+		                        <label class="custom-control custom-checkbox custom-control-inline">
+		                            <input type="checkbox" class="custom-control-input" name="check" id="check" checked="checked" value="">
+		                            <span class="custom-control-label" style="font-size:13px;margin-top:3px;"><a href="javascript:;">我已阅读并同意相关服务条款和隐私政策</a></span>
+	                          	</label>
+		                    </div>
+							<div class="form-footer" style="margin-top: 0;">
+								<button type="button" class="btn btn-primary btn-block" onclick="register()">注 册</button>
+							</div>
+						</div>
+					</form>
+					<div class="text-center text-muted">
+						已经有帐户了吗? <a href="login.html">去登陆</a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+
+	<script>
+    	$('input').bind('keyup',function(event){
+	        if (event.keyCode == "13") register();
+	    });
+
+    	var reg = false;
+	    function register() {
+	    	if(reg) return false;
+	    	reg = true;
+	    	$.ajax({
+	    		url: '/index/user/register.html',
+	    		type: 'post',
+	    		data: $('form').serialize(),
+	    		success:function(res) {
+	    			console.log(res)
+	    			if(!res.code) {
+	    				reg = false;
+	    				layer.msg(res.msg,{icon:2});
+	    			}
+	    			else {
+	    				layer.msg(res.msg,{icon:1});
+	    				setTimeout(function(){
+	    					location.href = res.url;
+	    				},1500);
+	    			}
+	    		}
+	    	});
+	    }
+
+
+	var countdown = 60;
+	var flag = false;
+    function getEmailCode() {
+    	if(flag) return false;
+    	flag = true;
+    	var email = $("#email").val();
+    	var username = $("#username").val();
+        $.ajax({
+            url: '/index/user/sendemailcode.html',
+            type: 'post',
+            data: {email: email,username:username},
+            success:function(res) {
+                console.log(res)
+                if(!res.code) {
+                	flag = false;
+                	layer.msg(res.msg,{icon:2});
+                }
+                else {
+                	layer.msg(res.msg,{icon:1});
+                    setCountDown();
+                }
+            }
+        });
+    }
+
+    function setCountDown() {
+        if(countdown < 1) {
+            $('#emailCodeBtn').addClass('btn-primary').removeClass('btn-default').text('获取验证码').attr('onclick','getEmailCode()');
+            countdown = 60;
+            flag = false;
+        }
+        else {
+            $('#emailCodeBtn').addClass('btn-default').removeClass('btn-primary').text('重新发送('+countdown+')').removeAttr('onclick');
+            countdown--;
+            setTimeout("setCountDown()",1000);
+        }
+    }
+	</script>
+
+            </div>
+
+
+            <script>
+            // 实时检测登录状态
+            // setInterval(function(){
+            //   $.post('', function(res) {
+            //     if(!res.code) {
+            //       location.replace(res.url);
+            //     }
+            //   });
+            // },1500);
+        </script>
+    </body>
+</html>

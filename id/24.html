@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | 原生PHP使用PHPExcel导出数据"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | 原生PHP使用PHPExcel导出数据</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+<link rel="stylesheet" href="../index/js/SyntaxHighlighter/shCore.css">
+<script type="text/javascript" charset="utf-8" src="../index/js/SyntaxHighlighter/shCore.js"></script>
+<script src="../index/js/info.js?v=3152" id="info" data-flag="detail" data-id="24"></script>
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<div id="main" class="content">
+	<div class="container1">
+		<article id="article-main" class="post1">
+			<section class="post_content">
+				<header class="post_header">
+					<h1 class="post_title">原生PHP使用PHPExcel导出数据</h1>
+				</header>
+				<!-- 正文 -->
+				<div class="post-body js-gallery" style="word-wrap:break-word;opacity:0;">
+											<p>PHPExcel项目已经托管到了Github上，可以通过Github进行来获取PHPExcel</p><p>Git地址：<a href="https://github.com/PHPOffice/PHPExcel" target="_blank" title="PHPExcel">https://github.com/PHPOffice/PHPExcel</a></p><p><br/></p><p>使用Composer 安装PHPExcel的步骤：</p><pre class="brush:php;toolbar:false;">composer&nbsp;require&nbsp;phpoffice/phpexcel</pre><p>如果下载不下来请自行百度composer中文镜像进行替换，composer下载后只需要Classes目录下的文件即可</p><p><br/></p><p><span style="color: rgb(0, 102, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, 微软雅黑, Tahoma, Arial, sans-serif; font-size: 18px; font-weight: 700; background-color: rgb(255, 255, 255);">1、PHPExcel导出方法实现过程</span></p><pre class="brush:php;toolbar:false">/**
+&nbsp;*&nbsp;数据导出
+&nbsp;*&nbsp;@param&nbsp;array&nbsp;$title&nbsp;&nbsp;&nbsp;标题行名称
+&nbsp;*&nbsp;@param&nbsp;array&nbsp;$data&nbsp;&nbsp;&nbsp;导出数据
+&nbsp;*&nbsp;@param&nbsp;string&nbsp;$fileName&nbsp;文件名
+&nbsp;*&nbsp;@param&nbsp;string&nbsp;$savePath&nbsp;保存路径
+&nbsp;*&nbsp;@param&nbsp;$type&nbsp;&nbsp;&nbsp;是否下载&nbsp;&nbsp;false--保存&nbsp;&nbsp;&nbsp;true--下载
+&nbsp;*&nbsp;@return&nbsp;string&nbsp;&nbsp;&nbsp;返回文件全路径
+&nbsp;*&nbsp;@throws&nbsp;PHPExcel_Exception
+&nbsp;*&nbsp;@throws&nbsp;PHPExcel_Reader_Exception
+&nbsp;*/&nbsp;
+function&nbsp;exportExcel($title=array(),&nbsp;$data=array(),&nbsp;$fileName=&#39;&#39;,&nbsp;$savePath=&#39;./&#39;,&nbsp;$isDown=false){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;include(&#39;PHPExcel.php&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$obj&nbsp;=&nbsp;new&nbsp;PHPExcel();&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;//横向单元格标识&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$cellName&nbsp;=&nbsp;array(&#39;A&#39;,&nbsp;&#39;B&#39;,&nbsp;&#39;C&#39;,&nbsp;&#39;D&#39;,&nbsp;&#39;E&#39;,&nbsp;&#39;F&#39;,&nbsp;&#39;G&#39;,&nbsp;&#39;H&#39;,&nbsp;&#39;I&#39;,&nbsp;&#39;J&#39;,&nbsp;&#39;K&#39;,&nbsp;&#39;L&#39;,&nbsp;&#39;M&#39;,&nbsp;&#39;N&#39;,&nbsp;&#39;O&#39;,&nbsp;&#39;P&#39;,&nbsp;&#39;Q&#39;,&nbsp;&#39;R&#39;,&nbsp;&#39;S&#39;,&nbsp;&#39;T&#39;,&nbsp;&#39;U&#39;,&nbsp;&#39;V&#39;,&nbsp;&#39;W&#39;,&nbsp;&#39;X&#39;,&nbsp;&#39;Y&#39;,&nbsp;&#39;Z&#39;,&nbsp;&#39;AA&#39;,&nbsp;&#39;AB&#39;,&nbsp;&#39;AC&#39;,&nbsp;&#39;AD&#39;,&nbsp;&#39;AE&#39;,&nbsp;&#39;AF&#39;,&nbsp;&#39;AG&#39;,&nbsp;&#39;AH&#39;,&nbsp;&#39;AI&#39;,&nbsp;&#39;AJ&#39;,&nbsp;&#39;AK&#39;,&nbsp;&#39;AL&#39;,&nbsp;&#39;AM&#39;,&nbsp;&#39;AN&#39;,&nbsp;&#39;AO&#39;,&nbsp;&#39;AP&#39;,&nbsp;&#39;AQ&#39;,&nbsp;&#39;AR&#39;,&nbsp;&#39;AS&#39;,&nbsp;&#39;AT&#39;,&nbsp;&#39;AU&#39;,&nbsp;&#39;AV&#39;,&nbsp;&#39;AW&#39;,&nbsp;&#39;AX&#39;,&nbsp;&#39;AY&#39;,&nbsp;&#39;AZ&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$obj-&gt;getActiveSheet(0)-&gt;setTitle(&#39;sheet名称&#39;);&nbsp;&nbsp;&nbsp;//设置sheet名称&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$_row&nbsp;=&nbsp;1;&nbsp;&nbsp;&nbsp;//设置纵向单元格标识&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if($title){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$_cnt&nbsp;=&nbsp;count($title);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$obj-&gt;getActiveSheet(0)-&gt;mergeCells(&#39;A&#39;.$_row.&#39;:&#39;.$cellName[$_cnt-1].$_row);&nbsp;&nbsp;&nbsp;//合并单元格&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$obj-&gt;setActiveSheetIndex(0)-&gt;setCellValue(&#39;A&#39;.$_row,&nbsp;&#39;数据导出：&#39;.date(&#39;Y-m-d&nbsp;H:i:s&#39;));&nbsp;&nbsp;//设置合并后的单元格内容&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$_row++;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i&nbsp;=&nbsp;0;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($title&nbsp;AS&nbsp;$v){&nbsp;&nbsp;&nbsp;//设置列标题&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$obj-&gt;setActiveSheetIndex(0)-&gt;setCellValue($cellName[$i].$_row,&nbsp;$v);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i++;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$_row++;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;//填写数据&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if($data){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i&nbsp;=&nbsp;0;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($data&nbsp;AS&nbsp;$_v){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$j&nbsp;=&nbsp;0;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($_v&nbsp;AS&nbsp;$_cell){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$obj-&gt;getActiveSheet(0)-&gt;setCellValue($cellName[$j]&nbsp;.&nbsp;($i+$_row),&nbsp;$_cell);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$j++;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i++;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;//文件名处理&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if(!$fileName){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$fileName&nbsp;=&nbsp;uniqid(time(),true);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$objWrite&nbsp;=&nbsp;PHPExcel_IOFactory::createWriter($obj,&nbsp;&#39;Excel2007&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if($isDown){&nbsp;&nbsp;&nbsp;//网页下载&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ob_end_clean();//清除缓冲区,避免乱码
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header(&#39;Content-Type:&nbsp;application/vnd.ms-excel&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header(&quot;Content-Disposition:attachment;filename=$fileName.xlsx&quot;);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header(&#39;Cache-Control:&nbsp;max-age=0&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$objWrite-&gt;save(&#39;php://output&#39;);exit;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$_fileName&nbsp;=&nbsp;iconv(&quot;utf-8&quot;,&nbsp;&quot;gb2312&quot;,&nbsp;$fileName);&nbsp;&nbsp;&nbsp;//转码&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$_savePath&nbsp;=&nbsp;$savePath.$_fileName.&#39;.xlsx&#39;;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$objWrite-&gt;save($_savePath);&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$savePath.$fileName.&#39;.xlsx&#39;;&nbsp;
+}&nbsp;
+&nbsp;&nbsp;&nbsp;
+//exportExcel(array(&#39;姓名&#39;,&#39;年龄&#39;),&nbsp;array(array(&#39;a&#39;,21),array(&#39;b&#39;,23)),&nbsp;&#39;档案&#39;,&nbsp;&#39;./&#39;,&nbsp;true);</pre><p><br/></p><p><span style="color: rgb(0, 102, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, 微软雅黑, Tahoma, Arial, sans-serif; font-size: 18px; font-weight: 700; background-color: rgb(255, 255, 255);">2、PHPExcel导入方法实现过程</span></p><pre class="brush:php;toolbar:false">/**
+*&nbsp;&nbsp;数据导入
+*&nbsp;@param&nbsp;string&nbsp;$file&nbsp;excel文件
+*&nbsp;@param&nbsp;string&nbsp;$sheet
+&nbsp;*&nbsp;@return&nbsp;string&nbsp;&nbsp;&nbsp;返回解析数据
+&nbsp;*&nbsp;@throws&nbsp;PHPExcel_Exception
+&nbsp;*&nbsp;@throws&nbsp;PHPExcel_Reader_Exception
+*/&nbsp;
+function&nbsp;importExecl($file=&#39;&#39;,&nbsp;$sheet=0){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$file&nbsp;=&nbsp;iconv(&quot;utf-8&quot;,&nbsp;&quot;gb2312&quot;,&nbsp;$file);&nbsp;&nbsp;&nbsp;//转码&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if(empty($file)&nbsp;OR&nbsp;!file_exists($file))&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die(&#39;file&nbsp;not&nbsp;exists!&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;include(&#39;PHPExcel.php&#39;);&nbsp;&nbsp;//引入PHP&nbsp;EXCEL类&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$objRead&nbsp;=&nbsp;new&nbsp;PHPExcel_Reader_Excel2007();&nbsp;&nbsp;&nbsp;//建立reader对象&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if(!$objRead-&gt;canRead($file)){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$objRead&nbsp;=&nbsp;new&nbsp;PHPExcel_Reader_Excel5();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!$objRead-&gt;canRead($file)){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die(&#39;No&nbsp;Excel!&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$cellName&nbsp;=&nbsp;array(&#39;A&#39;,&nbsp;&#39;B&#39;,&nbsp;&#39;C&#39;,&nbsp;&#39;D&#39;,&nbsp;&#39;E&#39;,&nbsp;&#39;F&#39;,&nbsp;&#39;G&#39;,&nbsp;&#39;H&#39;,&nbsp;&#39;I&#39;,&nbsp;&#39;J&#39;,&nbsp;&#39;K&#39;,&nbsp;&#39;L&#39;,&nbsp;&#39;M&#39;,&nbsp;&#39;N&#39;,&nbsp;&#39;O&#39;,&nbsp;&#39;P&#39;,&nbsp;&#39;Q&#39;,&nbsp;&#39;R&#39;,&nbsp;&#39;S&#39;,&nbsp;&#39;T&#39;,&nbsp;&#39;U&#39;,&nbsp;&#39;V&#39;,&nbsp;&#39;W&#39;,&nbsp;&#39;X&#39;,&nbsp;&#39;Y&#39;,&nbsp;&#39;Z&#39;,&nbsp;&#39;AA&#39;,&nbsp;&#39;AB&#39;,&nbsp;&#39;AC&#39;,&nbsp;&#39;AD&#39;,&nbsp;&#39;AE&#39;,&nbsp;&#39;AF&#39;,&nbsp;&#39;AG&#39;,&nbsp;&#39;AH&#39;,&nbsp;&#39;AI&#39;,&nbsp;&#39;AJ&#39;,&nbsp;&#39;AK&#39;,&nbsp;&#39;AL&#39;,&nbsp;&#39;AM&#39;,&nbsp;&#39;AN&#39;,&nbsp;&#39;AO&#39;,&nbsp;&#39;AP&#39;,&nbsp;&#39;AQ&#39;,&nbsp;&#39;AR&#39;,&nbsp;&#39;AS&#39;,&nbsp;&#39;AT&#39;,&nbsp;&#39;AU&#39;,&nbsp;&#39;AV&#39;,&nbsp;&#39;AW&#39;,&nbsp;&#39;AX&#39;,&nbsp;&#39;AY&#39;,&nbsp;&#39;AZ&#39;);&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$obj&nbsp;=&nbsp;$objRead-&gt;load($file);&nbsp;&nbsp;//建立excel对象&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$currSheet&nbsp;=&nbsp;$obj-&gt;getSheet($sheet);&nbsp;&nbsp;&nbsp;//获取指定的sheet表&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$columnH&nbsp;=&nbsp;$currSheet-&gt;getHighestColumn();&nbsp;&nbsp;&nbsp;//取得最大的列号&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$columnCnt&nbsp;=&nbsp;array_search($columnH,&nbsp;$cellName);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$rowCnt&nbsp;=&nbsp;$currSheet-&gt;getHighestRow();&nbsp;&nbsp;&nbsp;//获取总行数&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;$data&nbsp;=&nbsp;array();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;for($_row=1;&nbsp;$_row&lt;=$rowCnt;&nbsp;$_row++){&nbsp;&nbsp;//读取内容&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for($_column=0;&nbsp;$_column&lt;=$columnCnt;&nbsp;$_column++){&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cellId&nbsp;=&nbsp;$cellName[$_column].$_row;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cellValue&nbsp;=&nbsp;$currSheet-&gt;getCell($cellId)-&gt;getValue();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//$cellValue&nbsp;=&nbsp;$currSheet-&gt;getCell($cellId)-&gt;getCalculatedValue();&nbsp;&nbsp;#获取公式计算的值&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($cellValue&nbsp;instanceof&nbsp;PHPExcel_RichText){&nbsp;&nbsp;&nbsp;//富文本转换字符串&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cellValue&nbsp;=&nbsp;$cellValue-&gt;__toString();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data[$_row][$cellName[$_column]]&nbsp;=&nbsp;$cellValue;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$data;&nbsp;
+}</pre><p><br/></p><p><br/></p><p>导出注意事项：</p><p>1、数字导出时，第一个数字为0时，会被省略。将其以字符串格式导出即可，处理办法可以在该字段后加空格即可，导出显示是伪科学计算法导出也可以使用该办法，例如$data[&#39;num&#39;] = $data[&#39;num&#39;].&#39; &#39;。</p><p>2、图片导出时，若出现图片导出有问题，可能是中文命名情况，可以用iconv对图片名先做处理。</p><p>3、在从数据库中取数据，数据是要导入到excel中显示的，有中文时不要用iconv，否则excel中显示都是false</p><p>4、下载的文件命名最好使用iconv处理下，因为可能会有浏览器兼容性问题导致下载的文件命名乱码而导致里边数据也是乱码的。</p><p>5、如果下载的excel打开时乱码，在header() 前面加上ob_end_clean() 函数, 清除缓冲区, 这样就不会乱码了!</p><p>ob_end_clean();//清除缓冲区,避免乱码</p><p>header(‘Content-Type: application/vnd.ms-excel’);</p><p><span style="color: rgb(0, 102, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, 微软雅黑, Tahoma, Arial, sans-serif; font-size: 18px; font-weight: 700; background-color: rgb(255, 255, 255);"><br/></span><br/></p>				</div>
+
+				<!-- 底部-转载 -->
+									<div class="announce">
+						<span>转载请注明转自:</span>
+			        	<a href="../index.html" title="刘贝个人博客">刘贝个人博客的</a>
+			        	《<a rel="bookmark" href="24.html" title="刘贝个人博客|原生PHP使用PHPExcel导出数据">原生PHP使用PHPExcel导出数据</a>》
+			        </div>
+				
+				<!-- 底部-标签-时间-阅读量 -->
+									<div class="meta split split--responsive cf">
+						<div class="split__title">
+							<time datetime="2018-03-30 15:33:42">2018-03-30 15:33:42发布 | 43人读过</time>
+							<br/>
+							<time>
+								<span>分类：php | </span>
+																	<span>关键字：<a href="javascript:;" title="刘贝个人博客|原生PHP使用PHPExcel导出数据">php</a></span>
+															</time>
+						</div>
+						<br/>
+						 
+							<div id="social-share"><span class="entypo-share"><i class="iconfont">&#xe614;</i>分享文章</span></div>
+						 
+							<div class="slide"><a class="btn-slide" title="switch down"><i class="iconfont">&#xe615;</i>折叠评论</a></div>
+											</div>
+				
+				<!-- 其他 -->
+									<!-- <div class="clearfix" id="social1">
+						<div class="social1-main clearfix">
+							<span class="like">
+								<a href="javascript:;" class="dingzan" title="点赞">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞
+									<i class="count">0</i>
+								</a>
+							</span>
+							<div class="shang-p">
+								<div class="shang-empty"><span></span></div>
+								<span class="tipso_style" id="tip-p">
+								<span class="shang-s">
+									<a title="赞助本站" href="javascript:;">赏</a></span>
+								</span>
+							</div>
+							<div class="share-sd">
+								<span class="share-s">
+									<a href="javascript:;" id="social-share" title="分享">
+										<i class="fa fa-share-alt" aria-hidden="true"></i> 分享
+									</a>
+								</span>
+							</div>
+						</div>
+					</div> -->
+							</section>
+		</article>
+	</div>
+
+			<svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<div id="social">
+			<ul>
+				<li>
+					<a href="javascript:;" id="qzone" target="_blank"><i class="iconfont">&#xe67f;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="weibo" target="_blank"><i class="iconfont">&#xe680;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="douban" target="_blank"><i class="iconfont">&#xe681;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="twitter" target="_blank"><i class="iconfont">&#xe683;</i></a>
+				</li>
+			</ul>
+		</div>
+		<svg id="dwTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<script>
+			$(function(){
+				var link = location.href;
+				var title = "原生PHP使用PHPExcel导出数据";
+				var	desc = `phpExcel的github上已经说明了，phpExcel最后的版本是1.8.1，已经不再维护了，新的项目是PhpSpreadsheet。PhpSpreadsheet是PHPExcel的下一个版本，它提高了兼容性，极大地提高了代码基础质量（命名空间、PSR遵从性、使用最新的PHP语言特性等）。`;
+				var source = "刘贝个人博客";
+				var qzone = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				var weibo = 'http://service.weibo.com/share/share.php?url='+link+'&sharesource='+source+'&title='+title+'&pic=pic&appkey=key';
+				var fiend = 'http://connect.qq.com/widget/shareqq/index.html?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				$('#qzone').attr('href',qzone);
+				$('#weibo').attr('href',weibo);
+				$('#douban,#twitter').attr('href',fiend);
+			});
+		</script>
+	
+	<!-- 评论 -->
+			<div id="panel" class="clearfix">
+			<section class="comments">
+				<div class="comments-main">
+					<div id="comments-list-title"><span>0</span> 条评论</div>
+					<ul class="commentwrap clearfix">
+											</ul>
+					<div class="clearfix">
+				    					    </div>
+				</div>
+			</section>
+		</div>
+
+		<!-- 回复 -->
+		<div id="respond" class="comment-respond clearfix">
+			<form id="commentform" class="clearfix">
+				<input type="hidden" name="msg_pid" id="msg_pid" value="0">
+				<input type="hidden" name="msg_img" id="msg_img" value="/upload/avatar/2019-06-25/hi_5cb1ad38ee9dd.jpg">
+				<input type="hidden" name="art_id" id="art_id" value="24">
+				<div class="clearfix"></div>
+				<div class="author-info">
+					<input type="text" name="msg_name" id="msg_name" placeholder="昵  称 : " value=""/>
+					<input type="text" name="msg_email" id="msg_email" placeholder="邮  箱 : " value=""/>
+					<input type="text" name="msg_link" id="msg_link" placeholder="网  址 : " value=""/>
+				</div>
+				<div class="clearfix"></div>
+				<div class="comment-form-info">
+					<div class="real-time-gravatar"><img id="real-time-gravatar" src="../upload/avatar/2019-06-25/hi_5cb1ad38ee9dd.jpg"/></div>
+					<p class="input-row">
+						<i class="row-icon"></i>
+						<textarea class="text_area" rows="5" cols="80" name="msg_content" id="msg_content" tabindex="4" placeholder="既然来了，你不说两句吗？(°∀°)ﾉ……"></textarea>
+						<input type="button" class="button" id="messageAdd" value="发送" data-url='/index/index/commentadd.html' />
+					</p>
+				</div>
+			</form>
+		</div>
+	
+	<!-- 文章分页 -->
+			<div class="navpost-part">
+			<div id="NextPrevPosts" style="visibility:inherit;">
+									<div class="prev" data-aos="slide-right" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe625;</i></div>
+						<div class="preview">
+							<img class="pull-left featuredImg" src="../index/images/no-image.png" alt="刘贝个人博客|Nginx之upstream分配方式">
+							<a class="pull-left preview-content bold" href="69.html" title="刘贝个人博客|Nginx之upstream分配方式">
+								<span>Nginx之upstream分配方式</span>
+							</a>
+						</div>
+					</div>
+									<div class="next" data-aos="slide-left" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe623;</i></div>
+						<div class="preview">
+							<img class="pull-right featuredImg" src="../index/images/no-image.png" alt="刘贝个人博客|解决微信下苹果手机音乐/视频不能自动播放问题">
+							<a class="pull-right preview-content bold" href="84.html" title="刘贝个人博客|解决微信下苹果手机音乐/视频不能自动播放问题">
+								<span>解决微信下苹果手机音乐/视频不能自动播放问题</span>
+							</a>
+						</div>
+					</div>
+							</div>
+		</div>
+		<script>
+			$(function(){
+				document.getElementById("NextPrevPosts").style.display = "block";
+				$(window).on("resize scroll",function() {
+				    var scrollTop = $(window).scrollTop();
+			    	if(scrollTop > 1) {
+						document.getElementById("NextPrevPosts").style.display = "none"
+					} else {
+						document.getElementById("NextPrevPosts").style.display = "block"
+					}
+				});
+			});
+		</script>
+	<!-- 结束 -->
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+<script type="text/javascript">
+	$(function(){
+		// 图片操作
+		$('#article-main').find('p').each(function(index) {
+			$(this).addClass('clearfix');
+		});
+		$('#article-main').find('p>img').each(function(index) {
+			var src = $(this).attr('src');
+			var width = $(this).width();
+			var height = $(this).height();
+			$(this).before('<quote class="pullquote"><a href="https://www.lbbug.com/id/'+src+'" rel="gallery" title=\'刘贝个人博客|原生PHP使用PHPExcel导出数据\'><img src="https://www.lbbug.com/id/'+src+'" alt="'+src+'" class="alignnone size-full" style="width:'+width+'px;height:'+height+'px" alt=\'刘贝个人博客|原生PHP使用PHPExcel导出数据\'></a></quote>').remove();
+		});
+		// 代码格式化
+		SyntaxHighlighter.all();
+        $("table .syntaxhighlighter").each(function () {
+            if (!$(this).hasClass("nogutter")) {
+                var $gutter = $($(this).find(".gutter")[0]);
+                var $codeLines = $($(this).find(".code .line"));
+                $gutter.find(".line").each(function (i) {
+                    $(this).height($($codeLines[i]).height());
+                    $($codeLines[i]).height($($codeLines[i]).height());
+                });
+            }
+        });
+        $('.post-body').css('opacity',1);
+	});
+
+ //    $(function(){
+	// 	$(".shang-s").find('a').mouseenter(function(){
+	// 		var offset = $('#social1').offset();
+	// 		var left = isMobile() ? '10%;' : (offset.left+250)+'px;';
+	// 		var html = "<div class='tipso_bubble' style='top:"+(offset.top-280)+"px;left:"+left+"' class='animated fadeInDown'>\
+	// 				<span id='shang'>\
+	// 					<span class='shang-main'>\
+	// 						<h4><i class='fa fa-heart' aria-hidden='true'></i> 您可以选择一种方式赞助本站</h4>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payAli.png' alt='支付宝扫一扫'/>\
+	// 							<h4>支付宝扫一扫赞助</h4>\
+	// 						</span>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payWechat.png' alt='微信扫一扫'/><h4>微信钱包扫描赞助</h4>\
+	// 						</span>\
+	// 						<span class='clear'></span>\
+	// 					</span>\
+	// 				</span>\
+	// 			</div>";
+	// 		$("body").append(html);
+	// 	});
+	// 	$(".shang-s").find('a').mouseleave(function(){
+	// 		$('.tipso_bubble').remove();
+	// 	});
+	// });
+</script>
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=7654"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>

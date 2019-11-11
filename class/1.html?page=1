@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | 学习分享,经验交流,个人生活"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | 分享学习经验，记录生活点滴</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="../id/1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<script src="../index/js/info.js?v=3945" id="info" data-flag="index" data-id=""></script>
+
+<div id="main" class="content">
+	<div class="container">
+		<article itemscope="itemscope">
+			<div class="posts-list js-posts">
+										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="postnormal review">
+								<div class="post-container review-item">
+									<div class="row review-item-wrapper">
+										<div class="col-sm-3">
+											<a href="../id/125.html" title="刘贝个人博客|腾讯云服务器热门云产品限量秒杀，云服务器1核1G 首年99元">
+																									<div class="review-item-img" style="background-image: url(../upload/articleCover/2019-08-30/ac_180316_ffgogc.jpg);"></div>
+																							</a>
+										</div>
+										<div class="col-sm-9 flex-xs-middle">
+											<div class="review-item-title">
+												<a href="../id/125.html" title="刘贝个人博客|腾讯云服务器热门云产品限量秒杀，云服务器1核1G 首年99元">腾讯云服务器热门云产品限量秒杀，云服务器1核1G 首年99元</a>
+											</div>
+											<div class="review-item-creator"><b>发布日期：</b>2个月前</div>
+											<span class="review-item-info"><b>阅读量：</b>241 reads</span>
+										</div>
+									</div>
+									<div class="review-bg-wrapper">
+																					<div class="bg-blur" style="background-image: url(../upload/articleCover/2019-08-30/ac_180316_ffgogc.jpg);"></div>
+																			</div>
+								</div>
+								<div class="post-container">
+									<div class="entry-content" style="white-space: pre-wrap;">这个活动目前还是很给力的，腾讯云基本一年都要搞几次这种活动，目前只要是新用户都可以参团。
+【数字生态，钜惠来袭】云服务器限时秒杀，首购1核1G 99元/年 </div>
+									<div class="post-footer">
+										<a class="gaz-btn primary" href="../id/125.html" title="刘贝个人博客|腾讯云服务器热门云产品限量秒杀，云服务器1核1G 首年99元">查看完整文章</a>
+																					<span class="total-comments-on-post pull-right">杂谈 | 关键字：腾讯云,秒杀</span>
+																			</div>
+								</div>
+							</div>
+						</div>
+															<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../upload/articleCover/2019-09-04/ac_155721_usfczx.jpg);">
+																	<div class="status_section">
+										<a href="../id/130.html" class="status_btn" title="刘贝个人博客|华硕ROG STRIX B360-G GAMING 主板装机教程">华硕ROG STRIX B360-G GAMING 主板装机教程</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">杂谈 | 2个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">特此记录
+方便日后拆机装机使用</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：华硕,B360-G,ROG,GAMING,主板</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/124.html" class="status_btn" title="刘贝个人博客|Windows上的Crontab 比Linux还方便">Windows上的Crontab 比Linux还方便</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">杂谈 | 2个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">Crontab是Linux下非常实用的一个功能，而Windows下如果使用计划任务来实现Crontab类似功能，在配置上则麻烦许多</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：crontab,Pycron,windows</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/123.html" class="status_btn" title="刘贝个人博客|动态在iframe父页面里调用子页面中的函数和节点">动态在iframe父页面里调用子页面中的函数和节点</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 2个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">主要实现父页面调用子页面中的JavaScript函数，以及子页面调用父页面中的JavaScript函数。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：iframe</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../upload/articleCover/2019-08-23/ac_153115_fawfbw.png);">
+																	<div class="status_section">
+										<a href="../id/118.html" class="status_btn" title="刘贝个人博客|Sublime Text 3 3207 破解安装版">Sublime Text 3 3207 破解安装版</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">Sublime Text | 2个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">Sublime Text一款用于代码、标记和散文的精致文本编辑器，是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：sublime,sublimetext3</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/109.html" class="status_btn" title="刘贝个人博客|jquery.cookie 使用方法">jquery.cookie 使用方法</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">jquery | 2个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">jQuery.Cookie.js插件是一个轻量级的Cookie管理插件</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：cookie,jquey.cookie</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../upload/avatar/2019-06-25/hi_5cb1a91d022c8.png);">
+																	<div class="status_section">
+										<a href="../id/106.html" class="status_btn" title="刘贝个人博客|有哪些值得推荐的下载软件的网站？">有哪些值得推荐的下载软件的网站？</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">杂谈 | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">作为一个软件狂，怎么可能没有几个下载软件的网站？怎么可能花钱买正版软件？（不花钱用正版软件，你也可以）</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：绿色软件</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(http://p1.pstatp.com/large/pgc-image/125359ce138843a39e5dce38a2a6721a);">
+																	<div class="status_section">
+										<a href="../id/116.html" class="status_btn" title="刘贝个人博客|SQL常用语句总结">SQL常用语句总结</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">MySql 基本操作全都在这里了</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../upload/avatar/2019-06-25/hi_5cb83420c0ee5.jpg);">
+																	<div class="status_section">
+										<a href="../id/105.html" class="status_btn" title="刘贝个人博客|博客后台更新至v5.0">博客后台更新至v5.0</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">杂谈 | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">最近利用休息时间准备把后台全部重写，后台UI和权限管理基于EasyAdmin二次修改开发，主要是更加适配移动端，功能模块布局更加合理，优化之前不合理的功能</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：版本更新,easyadmin</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/104.html" class="status_btn" title="刘贝个人博客|解决PHP剪切缩略图生成png，gif透明图时，黑色背景问题">解决PHP剪切缩略图生成png，gif透明图时，黑色背景问题</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">最近做头像上传用到剪切，只要GIF或者PNG是透明的话，剪切后都会变成黑色的背景图。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：图片上传,图片合并</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/103.html" class="status_btn" title="刘贝个人博客|layer ui upload上传中无法获取动态参数">layer ui upload上传中无法获取动态参数</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">使用upload.render()上传data参数是动态获取的，但是上传时却是初始值</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：layerui,layer.upload</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="postnormal review">
+								<div class="post-container review-item">
+									<div class="row review-item-wrapper">
+										<div class="col-sm-3">
+											<a href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">
+																									<div class="review-item-img" style="background-image: url(http://mmbiz.qpic.cn/mmbiz_jpg/DmibiaFiaAI4B20nQwrpTM80lKucKXEood03ymZtSXJPJE72pt2yZxYtA25RFx2KkU0icfCdRX7Eo5RlO5HyR78cpQ/0?wx_fmt=jpeg);"></div>
+																							</a>
+										</div>
+										<div class="col-sm-9 flex-xs-middle">
+											<div class="review-item-title">
+												<a href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;</a>
+											</div>
+											<div class="review-item-creator"><b>发布日期：</b>3个月前</div>
+											<span class="review-item-info"><b>阅读量：</b>94 reads</span>
+										</div>
+									</div>
+									<div class="review-bg-wrapper">
+																					<div class="bg-blur" style="background-image: url(http://mmbiz.qpic.cn/mmbiz_jpg/DmibiaFiaAI4B20nQwrpTM80lKucKXEood03ymZtSXJPJE72pt2yZxYtA25RFx2KkU0icfCdRX7Eo5RlO5HyR78cpQ/0?wx_fmt=jpeg);"></div>
+																			</div>
+								</div>
+								<div class="post-container">
+									<div class="entry-content" style="white-space: pre-wrap;">用MySQL的朋友们请不要使用utf8，请使用utf8mb4</div>
+									<div class="post-footer">
+										<a class="gaz-btn primary" href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">查看完整文章</a>
+																					<span class="total-comments-on-post pull-right">mysql | 关键字：mysql,编码,字符集</span>
+																			</div>
+								</div>
+							</div>
+						</div>
+															<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/99.html" class="status_btn" title="刘贝个人博客|webuploader 多图上传，修改信息时，如何回显这些图片">webuploader 多图上传，修改信息时，如何回显这些图片</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">WebUploader是由Baidu WebFE(FEX)团队开发的一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，沿用原来的FLASH运行时，兼容IE6+，iOS 6+, android 4+。两套运行时，同样的调用方式，可供用户任意选用。
+采用大文件分片并发上传，极大的提高了文件上传效率。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：webuploader</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/93.html" class="status_btn" title="刘贝个人博客|Composer 国内镜像站 (持续更新)">Composer 国内镜像站 (持续更新)</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">composer | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">这里有最全的国内Composer镜像，告别Composer龟速下载</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：composer</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/92.html" class="status_btn" title="刘贝个人博客|PHP图片合并，并添加文字">PHP图片合并，并添加文字</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">背景图片合并二维码，并加文字</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：图片合并</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/90.html" class="status_btn" title="刘贝个人博客|微信分享后在当前URL拼接参数说明">微信分享后在当前URL拼接参数说明</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">微信公众号 | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">微信分享会根据分享类型的不同，为原始链接拼接如下参数</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：微信,分享</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/89.html" class="status_btn" title="刘贝个人博客|光年后台管理模板(Light Year Admin)">光年后台管理模板(Light Year Admin)</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">杂谈 | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">光年(Light Year Admin)后台管理系统模板是一个基于Bootstrap v3.3.7的纯HTML模板，简洁而清新的后台模板，功能虽少，倒也满足简单的后台功能，也能够快速上手。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：html</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/88.html" class="status_btn" title="刘贝个人博客|php curl提交post请求到一个网址 如何获取返回的文件名">php curl提交post请求到一个网址 如何获取返回的文件名</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">curl提交post请求到一个网址，网址会返回一个文件，如果输出会输出这个文件的内容 如何获取返回的文件名，或者如何把这个文件保存呢？</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/87.html" class="status_btn" title="刘贝个人博客|nginx日志里显示域名当前请求域名">nginx日志里显示域名当前请求域名</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">比如说这个请求是通过ip直接访问的本机？还是通过域名访问的？</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list js-gallery" data-aos="fade-up">
+							<div class="post-album">
+								<div class="row content">
+									<div class="bg" style="background-image: url(../upload/articlecover/2019-06-27/ac_5d148e9596566.jpg);"></div>
+									<div class="contentext flex-xs-middle">
+										<div class="album-title">
+											<a href="../id/85.html" title="刘贝个人博客|微星B360M迫击炮装机教程和接线图">微星B360M迫击炮装机教程和接线图</a>
+										</div>
+										<h5 class="review-item-creator"><b>发布日期：</b>4个月前</h5>
+										<div class="album-content" style="white-space: pre-line;">特此记录
+方便日后拆机装机使用</div>
+									</div>
+									<div class="album-thumb-width flex-xs-middle">
+										<div class="row album-thumb no-gutter">
+																							<div class="col-xs-4">
+													<img class="thumb" src="../upload/articlecover/2019-06-27/ac_5d148e9596566.jpg" style="height:95px;" alt="刘贝个人博客|微星B360M迫击炮装机教程和接线图"/>
+												</div>
+																							<div class="col-xs-4">
+													<img class="thumb" src="../upload/articlecover/2019-06-27/ac_5d148e99a0c44.jpg" style="height:95px;" alt="刘贝个人博客|微星B360M迫击炮装机教程和接线图"/>
+												</div>
+																							<div class="col-xs-4">
+													<img class="thumb" src="../upload/articlecover/2019-06-27/ac_5d148e9c388b7.jpg" style="height:95px;" alt="刘贝个人博客|微星B360M迫击炮装机教程和接线图"/>
+												</div>
+																							<div class="col-xs-4">
+													<img class="thumb" src="../upload/articlecover/2019-06-27/ac_5d148fd2c858c.png" style="height:95px;" alt="刘贝个人博客|微星B360M迫击炮装机教程和接线图"/>
+												</div>
+																							<div class="col-xs-4">
+													<img class="thumb" src="../upload/articlecover/2019-06-27/ac_5d148fd5a20e9.png" style="height:95px;" alt="刘贝个人博客|微星B360M迫击炮装机教程和接线图"/>
+												</div>
+																							<div class="col-xs-4">
+													<a href="../id/85.html" title="刘贝个人博客|微星B360M迫击炮装机教程和接线图">共5张</a>
+												</div>
+																					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+												</div>
+		</article>
+
+		<!-- 分页 -->
+		<div class="clearfix" style="text-align: right;">
+	    	<style>
+            #easyPage p{margin:0;padding:0;border:none;}
+           	.cl:after,.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}
+			.cl, .clearfix{zoom: 1}
+            #easyPage{width:100%;padding:5px 0;}
+            #easyPage p.pageRemark{border-style:none;background:none;margin-right:0px;color:#666;font-size:14px;}
+            #easyPage p.pageRemark b{color:red;}
+            #easyPage a{display:block;float:left;margin-right:10px;padding:0 10px;height:25px;line-height:25px;border:1px #cccccc solid;background:#fff;text-decoration:none;color:#808080;font-size:14px;}
+            #easyPage p.pageEllipsis{border-style:none;background:none;padding:0;color:#808080;}
+            #easyPage p{float:left;padding:0 10px;height:25px;line-height:25px;color:#bbb;border:1px #ccc solid;background:#fcfcfc;margin-right:8px;font-size:14px}
+            #easyPage a.cur{border:1px solid #bebbaa;background:#bebbaa;color:#fff;}
+        </style><div style='float: right;'><div id='easyPage' class='clearfix'><p>首页</p><p>上一页</p><a href='1.html?page=1' title='第1页' class='cur'>1</a><a href='1.html?page=2' title='第2页'>2</a><a href='1.html?page=3' title='第3页'>3</a><a href='1.html?page=4' title='第4页'>4</a><a href='1.html?page=5' title='第5页'>5</a><a href='1.html?page=2' title='下一页'>下一页</a><a href='1.html?page=5' title='尾页'>尾页</a></div></div>	    </div>
+	</div>
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=1681"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | 不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | 不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+<link rel="stylesheet" href="../index/js/SyntaxHighlighter/shCore.css">
+<script type="text/javascript" charset="utf-8" src="../index/js/SyntaxHighlighter/shCore.js"></script>
+<script src="../index/js/info.js?v=8184" id="info" data-flag="detail" data-id="102"></script>
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<div id="main" class="content">
+	<div class="container1">
+		<article id="article-main" class="post1">
+			<section class="post_content">
+				<header class="post_header">
+					<h1 class="post_title">不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;</h1>
+				</header>
+				<!-- 正文 -->
+				<div class="post-body js-gallery" style="word-wrap:break-word;opacity:0;">
+											<p style="white-space: normal;font-variant-ligatures: normal;orphans: 2;widows: 2;text-align: center;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">最近我遇到了一个bug，我试着通过Rails在以“utf8”编码的MariaDB中保存一个UTF-8字符串，然后出现了一个离奇的错误：</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><section><section><p style="margin-right: 8px;margin-left: 8px;padding: 5.95px;max-width: 100%;min-height: 1em;border-radius: 4px;font-size: 0.85em;background: rgb(40, 44, 52);color: rgb(171, 178, 191);overflow-x: auto;white-space: nowrap;line-height: 1.5em;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;letter-spacing: 0.5px;box-sizing: border-box !important;overflow-wrap: break-word !important;">Incorrect <span class="" style="max-width: 100%;color: rgb(198, 120, 221);background: rgba(0, 0, 0, 0);display: inline;width: 44px;text-decoration-style: solid;text-decoration-color: rgb(198, 120, 221);box-sizing: border-box !important;overflow-wrap: break-word !important;">string</span> <span class="" style="max-width: 100%;color: rgb(198, 120, 221);background: rgba(0, 0, 0, 0);display: inline;width: 36px;text-decoration-style: solid;text-decoration-color: rgb(198, 120, 221);box-sizing: border-box !important;overflow-wrap: break-word !important;">value</span>: ‘ð &lt;…’ </span> column ‘summary’ at row <span class="" style="max-width: 100%;color: rgb(209, 154, 102);background: rgba(0, 0, 0, 0);display: inline;width: 6px;text-decoration-style: solid;text-decoration-color: rgb(209, 154, 102);box-sizing: border-box !important;overflow-wrap: break-word !important;">1</span></p></section></section><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">我用的是UTF-8编码的客户端，服务器也是UTF-8编码的，数据库也是，就连要保存的这个字符串“😃 &lt;…”也是合法的utf-8。&lt; span=&quot;&quot;&gt;</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">问题的症结在于，MySQL的“utf8”实际上不是真正的UTF-8。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“utf8”只支持每个字符最多三个字节，而真正的UTF-8是每个字符最多四个字节。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">MySQL一直没有修复这个bug，他们在2010年发布了一个叫作“utf8mb4”的字符集，绕过了这个问题。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">当然，他们并没有对新的字符集广而告之（可能是因为这个bug让他们觉得很尴尬），以致于现在网络上仍然在建议开发者使用“utf8”，但这些建议都是错误的。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">简单概括如下：</span></strong></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">1.MySQL的“utf8mb4”是真正的“UTF-8”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">2.MySQL的“utf8”是一种“专属的编码”，它能够编码的Unicode字符并不多。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">我要在这里澄清一下：所有在使用“utf8”的MySQL和MariaDB用户都应该改用“utf8mb4”，永远都不要再使用“utf8”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><h2 style="max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;color: rgb(171, 25, 66);box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">那么什么是编码？什么是UTF-8？</strong></span></h2><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">我们都知道，计算机使用0和1来存储文本。比如字符“C”被存成“01000011”，那么计算机在显示这个字符时需要经过两个步骤：</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">1、计算机读取“01000011”，得到数字67，因为67被编码成“01000011”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">2、计算机在Unicode字符集中查找67，找到了“C”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">同样的：</span></strong></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">1、我的电脑将“C”映射成Unicode字符集中的67。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">2、我的电脑将67编码成“01000011”，并发送给Web服务器。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">几乎所有的网络应用都使用了Unicode字符集，因为没有理由使用其他字符集。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">Unicode字符集包含了上百万个字符。最简单的编码是UTF-32，每个字符使用32位。这样做最简单，因为一直以来，计算机将32位视为数字，而计算机最在行的就是处理数字。但问题是，这样太浪费空间了。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">UTF-8可以节省空间，在UTF-8中，字符“C”只需要8位，一些不常用的字符，比如“”需要32位。其他的字符可能使用16位或24位。一篇类似本文这样的文章，如果使用UTF-8编码，占用的空间只有UTF-32的四分之一左右。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">MySQL的“utf8”字符集与其他程序不兼容，它所谓的“”，可能真的是一坨……</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><h2 style="max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"></h2><h2 style="max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;color: rgb(171, 25, 66);box-sizing: border-box !important;overflow-wrap: break-word !important;">MySQL简史</span></strong></h2><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">为什么MySQL开发者会让“utf8”失效？我们或许可以从提交日志中寻找答案。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">MySQL从4.1版本开始支持UTF-8，也就是2003年，而今天使用的UTF-8标准（RFC 3629）是随后才出现的。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">旧版的UTF-8标准（RFC 2279）最多支持每个字符6个字节。2002年3月28日，MySQL开发者在第一个MySQL 4.1预览版中使用了RFC 2279。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">同年9月，他们对MySQL源代码进行了一次调整：“UTF8现在最多只支持3个字节的序列”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">是谁提交了这些代码？他为什么要这样做？这个问题不得而知。在迁移到Git后（MySQL最开始使用的是BitKeeper），MySQL代码库中的很多提交者的名字都丢失了。2003年9月的邮件列表中也找不到可以解释这一变更的线索。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">不过我可以试着猜测一下。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">2002年，MySQL做出了一个决定：如果用户可以保证数据表的每一行都使用相同的字节数，那么MySQL就可以在性能方面来一个大提升。为此，用户需要将文本列定义为“CHAR”，每个“CHAR”列总是拥有相同数量的字符。如果插入的字符少于定义的数量，MySQL就会在后面填充空格，如果插入的字符超过了定义的数量，后面超出部分会被截断。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">MySQL开发者在最开始尝试UTF-8时使用了每个字符6个字节，CHAR(1)使用6个字节，CHAR(2)使用12个字节，并以此类推。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">应该说，他们最初的行为才是正确的，可惜这一版本一直没有发布。但是文档上却这么写了，而且广为流传，所有了解UTF-8的人都认同文档里写的东西。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">不过很显然，MySQL开发者或厂商担心会有用户做这两件事：</span></strong></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">1、使用CHAR定义列（在现在看来，CHAR已经是老古董了，但在那时，在MySQL中使用CHAR会更快，不过从2005年以后就不是这样子了）。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">2、将CHAR列的编码设置为“utf8”。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">我的猜测是MySQL开发者本来想帮助那些希望在空间和速度上双赢的用户，但他们搞砸了“utf8”编码。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">所以结果就是没有赢家。那些希望在空间和速度上双赢的用户，当他们在使用“utf8”的CHAR列时，实际上使用的空间比预期的更大，速度也比预期的慢。而想要正确性的用户，当他们使用“utf8”编码时，却无法保存像“”这样的字符。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">在这个不合法的字符集发布了之后，MySQL就无法修复它，因为这样需要要求所有用户重新构建他们的数据库。最终，MySQL在2010年重新发布了“utf8mb4”来支持真正的UTF-8。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><h2 style="max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;color: rgb(171, 25, 66);box-sizing: border-box !important;overflow-wrap: break-word !important;">为什么这件事情会让人如此抓狂</span></strong></h2><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">因为这个问题，我整整抓狂了一个礼拜。我被“utf8”愚弄了，花了很多时间才找到这个bug。但我一定不是唯一的一个，网络上几乎所有的文章都把“utf8”当成是真正的UTF-8。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“utf8”只能算是个专有的字符集，它给我们带来了新问题，却一直没有得到解决。</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></p><h2 style="max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;color: rgb(171, 25, 66);box-sizing: border-box !important;overflow-wrap: break-word !important;">总结</span></strong></h2><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">如果你在使用MySQL或MariaDB，不要用“utf8”编码，改用“utf8mb4”。这里：</span></p><p style="max-width: 100%;min-height: 1em;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);text-align: left;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">https://mathiasbynens.be/notes/mysql-utf8mb4#utf8-to-utf8mb4 </span></p><p style="max-width: 100%; min-height: 1em; letter-spacing: 0.544px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="max-width: 100%;font-size: 15px;box-sizing: border-box !important;overflow-wrap: break-word !important;">提供了一个指南用于将现有数据库的字符编码从“utf8”转成“utf8mb4”。</span></p>				</div>
+
+				<!-- 底部-转载 -->
+									<div class="announce">
+						<span>转载请注明转自:</span>
+			        	<a href="../index.html" title="刘贝个人博客">刘贝个人博客的</a>
+			        	《<a rel="bookmark" href="102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;</a>》
+			        </div>
+				
+				<!-- 底部-标签-时间-阅读量 -->
+									<div class="meta split split--responsive cf">
+						<div class="split__title">
+							<time datetime="2019-08-06 21:58:33">2019-08-06 21:58:33发布 | 93人读过</time>
+							<br/>
+							<time>
+								<span>分类：mysql | </span>
+																	<span>关键字：<a href="javascript:;" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">mysql,编码,字符集</a></span>
+															</time>
+						</div>
+						<br/>
+						 
+							<div id="social-share"><span class="entypo-share"><i class="iconfont">&#xe614;</i>分享文章</span></div>
+						 
+							<div class="slide"><a class="btn-slide" title="switch down"><i class="iconfont">&#xe615;</i>折叠评论</a></div>
+											</div>
+				
+				<!-- 其他 -->
+									<!-- <div class="clearfix" id="social1">
+						<div class="social1-main clearfix">
+							<span class="like">
+								<a href="javascript:;" class="dingzan" title="点赞">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞
+									<i class="count">0</i>
+								</a>
+							</span>
+							<div class="shang-p">
+								<div class="shang-empty"><span></span></div>
+								<span class="tipso_style" id="tip-p">
+								<span class="shang-s">
+									<a title="赞助本站" href="javascript:;">赏</a></span>
+								</span>
+							</div>
+							<div class="share-sd">
+								<span class="share-s">
+									<a href="javascript:;" id="social-share" title="分享">
+										<i class="fa fa-share-alt" aria-hidden="true"></i> 分享
+									</a>
+								</span>
+							</div>
+						</div>
+					</div> -->
+							</section>
+		</article>
+	</div>
+
+			<svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<div id="social">
+			<ul>
+				<li>
+					<a href="javascript:;" id="qzone" target="_blank"><i class="iconfont">&#xe67f;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="weibo" target="_blank"><i class="iconfont">&#xe680;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="douban" target="_blank"><i class="iconfont">&#xe681;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="twitter" target="_blank"><i class="iconfont">&#xe683;</i></a>
+				</li>
+			</ul>
+		</div>
+		<svg id="dwTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<script>
+			$(function(){
+				var link = location.href;
+				var title = "不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;";
+				var	desc = `用MySQL的朋友们请不要使用utf8，请使用utf8mb4`;
+				var source = "刘贝个人博客";
+				var qzone = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				var weibo = 'http://service.weibo.com/share/share.php?url='+link+'&sharesource='+source+'&title='+title+'&pic=pic&appkey=key';
+				var fiend = 'http://connect.qq.com/widget/shareqq/index.html?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				$('#qzone').attr('href',qzone);
+				$('#weibo').attr('href',weibo);
+				$('#douban,#twitter').attr('href',fiend);
+			});
+		</script>
+	
+	<!-- 评论 -->
+			<div id="panel" class="clearfix">
+			<section class="comments">
+				<div class="comments-main">
+					<div id="comments-list-title"><span>0</span> 条评论</div>
+					<ul class="commentwrap clearfix">
+											</ul>
+					<div class="clearfix">
+				    					    </div>
+				</div>
+			</section>
+		</div>
+
+		<!-- 回复 -->
+		<div id="respond" class="comment-respond clearfix">
+			<form id="commentform" class="clearfix">
+				<input type="hidden" name="msg_pid" id="msg_pid" value="0">
+				<input type="hidden" name="msg_img" id="msg_img" value="/upload/avatar/2019-06-25/hi_5cb1ad305622c.jpg">
+				<input type="hidden" name="art_id" id="art_id" value="102">
+				<div class="clearfix"></div>
+				<div class="author-info">
+					<input type="text" name="msg_name" id="msg_name" placeholder="昵  称 : " value=""/>
+					<input type="text" name="msg_email" id="msg_email" placeholder="邮  箱 : " value=""/>
+					<input type="text" name="msg_link" id="msg_link" placeholder="网  址 : " value=""/>
+				</div>
+				<div class="clearfix"></div>
+				<div class="comment-form-info">
+					<div class="real-time-gravatar"><img id="real-time-gravatar" src="../upload/avatar/2019-06-25/hi_5cb1ad305622c.jpg"/></div>
+					<p class="input-row">
+						<i class="row-icon"></i>
+						<textarea class="text_area" rows="5" cols="80" name="msg_content" id="msg_content" tabindex="4" placeholder="既然来了，你不说两句吗？(°∀°)ﾉ……"></textarea>
+						<input type="button" class="button" id="messageAdd" value="发送" data-url='/index/index/commentadd.html' />
+					</p>
+				</div>
+			</form>
+		</div>
+	
+	<!-- 文章分页 -->
+			<div class="navpost-part">
+			<div id="NextPrevPosts" style="visibility:inherit;">
+									<div class="prev" data-aos="slide-right" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe625;</i></div>
+						<div class="preview">
+							<img class="pull-left featuredImg" src="../index/images/no-image.png" alt="刘贝个人博客|layer ui upload上传中无法获取动态参数">
+							<a class="pull-left preview-content bold" href="103.html" title="刘贝个人博客|layer ui upload上传中无法获取动态参数">
+								<span>layer ui upload上传中无法获取动态参数</span>
+							</a>
+						</div>
+					</div>
+									<div class="next" data-aos="slide-left" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe623;</i></div>
+						<div class="preview">
+							<img class="pull-right featuredImg" src="../index/images/no-image.png" alt="刘贝个人博客|webuploader 多图上传，修改信息时，如何回显这些图片">
+							<a class="pull-right preview-content bold" href="99.html" title="刘贝个人博客|webuploader 多图上传，修改信息时，如何回显这些图片">
+								<span>webuploader 多图上传，修改信息时，如何回显这些图片</span>
+							</a>
+						</div>
+					</div>
+							</div>
+		</div>
+		<script>
+			$(function(){
+				document.getElementById("NextPrevPosts").style.display = "block";
+				$(window).on("resize scroll",function() {
+				    var scrollTop = $(window).scrollTop();
+			    	if(scrollTop > 1) {
+						document.getElementById("NextPrevPosts").style.display = "none"
+					} else {
+						document.getElementById("NextPrevPosts").style.display = "block"
+					}
+				});
+			});
+		</script>
+	<!-- 结束 -->
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+<script type="text/javascript">
+	$(function(){
+		// 图片操作
+		$('#article-main').find('p').each(function(index) {
+			$(this).addClass('clearfix');
+		});
+		$('#article-main').find('p>img').each(function(index) {
+			var src = $(this).attr('src');
+			var width = $(this).width();
+			var height = $(this).height();
+			$(this).before('<quote class="pullquote"><a href="'+src+'" rel="gallery" title=\'刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;\'><img src="'+src+'" alt="'+src+'" class="alignnone size-full" style="width:'+width+'px;height:'+height+'px" alt=\'刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;\'></a></quote>').remove();
+		});
+		// 代码格式化
+		SyntaxHighlighter.all();
+        $("table .syntaxhighlighter").each(function () {
+            if (!$(this).hasClass("nogutter")) {
+                var $gutter = $($(this).find(".gutter")[0]);
+                var $codeLines = $($(this).find(".code .line"));
+                $gutter.find(".line").each(function (i) {
+                    $(this).height($($codeLines[i]).height());
+                    $($codeLines[i]).height($($codeLines[i]).height());
+                });
+            }
+        });
+        $('.post-body').css('opacity',1);
+	});
+
+ //    $(function(){
+	// 	$(".shang-s").find('a').mouseenter(function(){
+	// 		var offset = $('#social1').offset();
+	// 		var left = isMobile() ? '10%;' : (offset.left+250)+'px;';
+	// 		var html = "<div class='tipso_bubble' style='top:"+(offset.top-280)+"px;left:"+left+"' class='animated fadeInDown'>\
+	// 				<span id='shang'>\
+	// 					<span class='shang-main'>\
+	// 						<h4><i class='fa fa-heart' aria-hidden='true'></i> 您可以选择一种方式赞助本站</h4>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payAli.png' alt='支付宝扫一扫'/>\
+	// 							<h4>支付宝扫一扫赞助</h4>\
+	// 						</span>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payWechat.png' alt='微信扫一扫'/><h4>微信钱包扫描赞助</h4>\
+	// 						</span>\
+	// 						<span class='clear'></span>\
+	// 					</span>\
+	// 				</span>\
+	// 			</div>";
+	// 		$("body").append(html);
+	// 	});
+	// 	$(".shang-s").find('a').mouseleave(function(){
+	// 		$('.tipso_bubble').remove();
+	// 	});
+	// });
+</script>
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=9817"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>

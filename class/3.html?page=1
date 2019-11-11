@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | 学习分享,经验交流,个人生活"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | 分享学习经验，记录生活点滴</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="../id/1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<script src="../index/js/info.js?v=5922" id="info" data-flag="index" data-id=""></script>
+
+<div id="main" class="content">
+	<div class="container">
+		<article itemscope="itemscope">
+			<div class="posts-list js-posts">
+										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(http://p1.pstatp.com/large/pgc-image/125359ce138843a39e5dce38a2a6721a);">
+																	<div class="status_section">
+										<a href="../id/116.html" class="status_btn" title="刘贝个人博客|SQL常用语句总结">SQL常用语句总结</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">MySql 基本操作全都在这里了</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/104.html" class="status_btn" title="刘贝个人博客|解决PHP剪切缩略图生成png，gif透明图时，黑色背景问题">解决PHP剪切缩略图生成png，gif透明图时，黑色背景问题</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">最近做头像上传用到剪切，只要GIF或者PNG是透明的话，剪切后都会变成黑色的背景图。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：图片上传,图片合并</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="postnormal review">
+								<div class="post-container review-item">
+									<div class="row review-item-wrapper">
+										<div class="col-sm-3">
+											<a href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">
+																									<div class="review-item-img" style="background-image: url(http://mmbiz.qpic.cn/mmbiz_jpg/DmibiaFiaAI4B20nQwrpTM80lKucKXEood03ymZtSXJPJE72pt2yZxYtA25RFx2KkU0icfCdRX7Eo5RlO5HyR78cpQ/0?wx_fmt=jpeg);"></div>
+																							</a>
+										</div>
+										<div class="col-sm-9 flex-xs-middle">
+											<div class="review-item-title">
+												<a href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;</a>
+											</div>
+											<div class="review-item-creator"><b>发布日期：</b>3个月前</div>
+											<span class="review-item-info"><b>阅读量：</b>94 reads</span>
+										</div>
+									</div>
+									<div class="review-bg-wrapper">
+																					<div class="bg-blur" style="background-image: url(http://mmbiz.qpic.cn/mmbiz_jpg/DmibiaFiaAI4B20nQwrpTM80lKucKXEood03ymZtSXJPJE72pt2yZxYtA25RFx2KkU0icfCdRX7Eo5RlO5HyR78cpQ/0?wx_fmt=jpeg);"></div>
+																			</div>
+								</div>
+								<div class="post-container">
+									<div class="entry-content" style="white-space: pre-wrap;">用MySQL的朋友们请不要使用utf8，请使用utf8mb4</div>
+									<div class="post-footer">
+										<a class="gaz-btn primary" href="../id/102.html" title="刘贝个人博客|不要在 MySQL 中使用&ldquo;utf8&rdquo;，请使用&ldquo;utf8mb4&rdquo;">查看完整文章</a>
+																					<span class="total-comments-on-post pull-right">mysql | 关键字：mysql,编码,字符集</span>
+																			</div>
+								</div>
+							</div>
+						</div>
+															<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/92.html" class="status_btn" title="刘贝个人博客|PHP图片合并，并添加文字">PHP图片合并，并添加文字</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">背景图片合并二维码，并加文字</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：图片合并</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/88.html" class="status_btn" title="刘贝个人博客|php curl提交post请求到一个网址 如何获取返回的文件名">php curl提交post请求到一个网址 如何获取返回的文件名</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">curl提交post请求到一个网址，网址会返回一个文件，如果输出会输出这个文件的内容 如何获取返回的文件名，或者如何把这个文件保存呢？</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/87.html" class="status_btn" title="刘贝个人博客|nginx日志里显示域名当前请求域名">nginx日志里显示域名当前请求域名</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 3个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">比如说这个请求是通过ip直接访问的本机？还是通过域名访问的？</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/63.html" class="status_btn" title="刘贝个人博客|MySql 5.7.25 ERROR 1055、1140 (42000) 错误解决办法">MySql 5.7.25 ERROR 1055、1140 (42000) 错误解决办法</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 6个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">MySQL 5.5/5.6上跑没有问题，在MySQL 5.7.25上就报了sql_mode=only_full_group_by的错误</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/47.html" class="status_btn" title="刘贝个人博客|MySql查询不区分大小写解决方案">MySql查询不区分大小写解决方案</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 7个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">最近，同事在使用系统的时候突然发现数据库保存的账号本来应该是admin，结果该同事用Admin帐号居然登录成功了</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/113.html" class="status_btn" title="刘贝个人博客|php foreach如何跳出多层循环">php foreach如何跳出多层循环</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 8个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">使用break可以跳出当前循环，那如果想再跳出上一层的循环呢</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php,跳出循环,break,foreach,for</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../upload/avatar/2019-06-25/hi_5cb1a91d022c8.png);">
+																	<div class="status_section">
+										<a href="../id/108.html" class="status_btn" title="刘贝个人博客|PHP带参数POST跳转">PHP带参数POST跳转</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 9个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">结合自己的业务需求，为了更好的使用，我写了下面的PHP函数，如果需要拿去吧，可以封装到自己的类里面</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php,post跳转</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/78.html" class="status_btn" title="刘贝个人博客|Nginx Location正则表达式">Nginx Location正则表达式</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 11个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">location指令的作用是根据用户请求的URI来执行不同的应用，也就是根据用户请求的网站URL进行匹配，匹配成功即进行相关的操作</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/73.html" class="status_btn" title="刘贝个人博客|PHP判断当前浏览器是否是手机端微信内置浏览器">PHP判断当前浏览器是否是手机端微信内置浏览器</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 11个月前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">PHP判断当前浏览器是否是手机端微信内置浏览器</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：微信,function,函数</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/51.html" class="status_btn" title="刘贝个人博客|Nginx combined 日志参数记录">Nginx combined 日志参数记录</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">Nginx服务器在运行的时候，会有各种操作，这些关键的操作信息会记录到文件中，这些文件叫做日志文件。日志文件的记录是有格式的，我们可以按系统默认的格式去记录，也可以按我们自定义的格式去记录。我们可以使用log_format指令来设置Nginx服务器的日志文件的记录格式。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/82.html" class="status_btn" title="刘贝个人博客|Nginx 解决location匹配url时报错 not working with regex">Nginx 解决location匹配url时报错 not working with regex</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">因为这一个小错误花了一早上的时间，最后发现问题所在真是气死了，处处都是坑</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/115.html" class="status_btn" title="刘贝个人博客|一个经典的PHP加密解密算法authcode">一个经典的PHP加密解密算法authcode</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">项目中有时我们需要使用PHP将特定的信息进行加密，也就是通过加密算法生成一个加密字符串，这个加密后的字符串可以通过解密算法进行解密，便于程序对解密后的信息进行处理</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php,加密</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/9.html" class="status_btn" title="刘贝个人博客|Centos PHP多版本共存教程">Centos PHP多版本共存教程</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">最近在搞微信机器人，安装时PHP环境&amp;amp;amp;amp;amp;amp;gt;=7.0，5.6的PHP跑不起来，记录下来在服务器上安装多版本PHP共存的过程</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/80.html" class="status_btn" title="刘贝个人博客|php解决stream_socket_client、file_get_content无法请求https">php解决stream_socket_client、file_get_content无法请求https</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">php使用stream_socket_client报错，并且使用file_get_content无法请求https</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/62.html" class="status_btn" title="刘贝个人博客|MySQL中常用错误码总结">MySQL中常用错误码总结</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">本文主要和大家分享MySQL中常用错误码总结，希望能帮助大家对MySQL中错误码有一个更深的了解。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/69.html" class="status_btn" title="刘贝个人博客|Nginx之upstream分配方式">Nginx之upstream分配方式</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;"> Nginx的upstream支持5种分配方式，下面将会详细介绍，其中，前三种为Nginx原生支持的分配方式，后两种为第三方支持的分配方式</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/24.html" class="status_btn" title="刘贝个人博客|原生PHP使用PHPExcel导出数据">原生PHP使用PHPExcel导出数据</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">phpExcel的github上已经说明了，phpExcel最后的版本是1.8.1，已经不再维护了，新的项目是PhpSpreadsheet。PhpSpreadsheet是PHPExcel的下一个版本，它提高了兼容性，极大地提高了代码基础质量（命名空间、PSR遵从性、使用最新的PHP语言特性等）。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 							</div>
+		</article>
+
+		<!-- 分页 -->
+		<div class="clearfix" style="text-align: right;">
+	    	<style>
+            #easyPage p{margin:0;padding:0;border:none;}
+           	.cl:after,.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}
+			.cl, .clearfix{zoom: 1}
+            #easyPage{width:100%;padding:5px 0;}
+            #easyPage p.pageRemark{border-style:none;background:none;margin-right:0px;color:#666;font-size:14px;}
+            #easyPage p.pageRemark b{color:red;}
+            #easyPage a{display:block;float:left;margin-right:10px;padding:0 10px;height:25px;line-height:25px;border:1px #cccccc solid;background:#fff;text-decoration:none;color:#808080;font-size:14px;}
+            #easyPage p.pageEllipsis{border-style:none;background:none;padding:0;color:#808080;}
+            #easyPage p{float:left;padding:0 10px;height:25px;line-height:25px;color:#bbb;border:1px #ccc solid;background:#fcfcfc;margin-right:8px;font-size:14px}
+            #easyPage a.cur{border:1px solid #bebbaa;background:#bebbaa;color:#fff;}
+        </style><div style='float: right;'><div id='easyPage' class='clearfix'><p>首页</p><p>上一页</p><a href='3.html?page=1' title='第1页' class='cur'>1</a><a href='3.html?page=2' title='第2页'>2</a><a href='3.html?page=2' title='下一页'>下一页</a><a href='3.html?page=2' title='尾页'>尾页</a></div></div>	    </div>
+	</div>
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=1686"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>

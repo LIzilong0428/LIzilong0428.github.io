@@ -1,0 +1,8 @@
+$(function(){
+	var flag = $('#info').attr('data-flag');
+	var id = $('#info').attr('data-id');
+	//console.log(flag+'//'+id);
+	$.post('/index/index/info', {flag:flag,id:id}, function(res) {
+		console.log(res);
+	});
+});

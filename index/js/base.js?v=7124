@@ -1,0 +1,151 @@
+// 菜单类 current-menu-item
+$(function(){
+	var nav_id = $.cookie('nav_id');
+	var nav_name = $.cookie('nav_name');
+	// console.log(nav_name+'//'+nav_id);
+	// $('#primary-menu').find('li').removeClass('current-menu-item');
+	// $('#nav-'+nav_id).parent('li').addClass('current-menu-item').parent('ul').parent('li').addClass('current-menu-item');
+	$('#primary-menu').find('a').click(function(event) {
+		var nav_name = $(this).text();
+		var nav_id = $(this).attr('data-id');
+		var target = $(this).attr('target');
+		if(target == '') {
+			$.cookie('nav_name',nav_name, {path:'/',expiress:30,sucue:true});
+			$.cookie('nav_id',nav_id, {path:'/',expiress:30,sucue:true});
+		}
+	});
+});
+// $(".bt-nav").mouseover(function(e){
+// 	e.stopPropagation();
+// 	$(this).parent().addClass('close');
+// });
+
+// 常用网站优秀博客
+var index;
+$(function(){
+	$(".userItem").mouseenter(function(){
+		var title = $(this).attr('data-title');
+		var remark = $(this).attr('data-remark') == '' ? title : $(this).attr('data-remark');
+		remark = '<span style="color:#807f83;">'+remark+'</span>';
+		if(remark != '') {
+			index = layer.tips(remark, $(this), {
+				tipsMore: true,
+				tips: [1, '#fff'],
+				time: 3000,
+			});
+		}
+	});
+	$(".userItem").mouseleave(function(){
+		layer.close(index)
+	});
+});
+
+// 评论留言
+$(function(){
+	function isEmail(val) {
+		var pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var domains= ["qq.com","163.com","vip.163.com","263.net","yeah.net","sohu.com","sina.cn","sina.com","eyou.com","gmail.com","hotmail.com","42du.cn",'outlook.com'];
+	  	if(pattern.test(val)) {
+		    var domain = val.substring(val.indexOf("@")+1);
+		    for(var i = 0; i< domains.length; i++) {
+				if(domain == domains[i]) {
+					return true;
+				}
+		    }
+		}
+		return false;
+	}
+
+	// 评论cookie
+	var userInfo = $.cookie('userInfo') == undefined ? {} : JSON.parse($.cookie('userInfo'));
+ 	if(userInfo.msg_name) {
+ 		$('#msg_name').val(userInfo.msg_name);
+ 		$('#msg_email').val(userInfo.msg_email);
+ 		$("#msg_link").val(userInfo.msg_link);
+ 		$("#msg_img").val(userInfo.msg_headimg);
+ 		$("#real-time-gravatar").attr('src',userInfo.msg_headimg);
+ 	}
+
+ 	// 评论提交
+	$('#messageAdd').click(function(){
+		var url = $(this).attr('data-url');
+		var text = '';
+		if($('#msg_name').val() == '') {
+			text = '请填写昵称';
+		}
+		else if(!isEmail($('#msg_email').val())) {
+			text = '请填写正确的邮箱地址';
+		}
+		else if($('#msg_content').val() == '') {
+			text = '请填写内容';
+		}
+		if(text != '') {
+			layer.msg(text,{icon:2});
+			return false;
+		}
+
+		var expiress = 30;
+		var userInfo = {'msg_name':$("#msg_name").val(),'msg_email':$('#msg_email').val(),'msg_link':$('#msg_link').val(),'msg_headimg':$("#real-time-gravatar").attr('src')};
+		$.cookie("userInfo",JSON.stringify(userInfo), {path:'/',expiress:expiress,sucue:true});
+
+		$.ajax({
+			url:url,
+			type:'post',
+			data:$('#commentform').serialize(),
+			success:function(res) {
+				if(!res.code) {
+					layer.msg(res.msg,{icon:2});
+				}
+				else {
+					layer.msg(res.msg,{icon:1});
+					setTimeout(function(){
+						location.reload();
+					},1500);
+				}
+			}
+		});
+	});
+});
+
+function isMobile(){
+	if( navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/webOS/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)
+	)return true;
+	return false;
+}
+
+function webSiteRunTime() {
+	function checkTime(i) {
+        if(i<10) i = "0" + i;
+        return i;
+    }
+	window.setTimeout("webSiteRunTime()", 1000);
+	var seconds = 1000;
+	var minutes = seconds * 60;
+	var hours = minutes * 60;
+	var days = hours * 24;
+	var years = days * 365;
+	var today = new Date();
+	var todayYear = today.getFullYear();
+	var todayMonth = today.getMonth();
+	var todayDate = today.getDate();
+	var todayHour = today.getHours();
+	var todayMinute = today.getMinutes();
+	var todaySecond = today.getSeconds();
+	var t1 = Date.UTC(2017,05,16,16,42,38);
+	var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+	var diff = t2-t1
+	var diffYears = Math.floor(diff/years);
+	var diffDays = Math.floor((diff/days)-diffYears*365);
+	var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+	var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+	var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+	var runtime ="网站已运行 "+diffYears+"年"+diffDays+"天"+checkTime(diffHours)+"时"+checkTime(diffMinutes)+"分"+checkTime(diffSeconds)+"秒";
+	document.getElementById('websiteruntime').innerHTML = runtime;
+}
+webSiteRunTime();

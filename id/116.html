@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | SQL常用语句总结"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | SQL常用语句总结</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+<link rel="stylesheet" href="../index/js/SyntaxHighlighter/shCore.css">
+<script type="text/javascript" charset="utf-8" src="../index/js/SyntaxHighlighter/shCore.js"></script>
+<script src="../index/js/info.js?v=7113" id="info" data-flag="detail" data-id="116"></script>
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="../class/8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../class/11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<div id="main" class="content">
+	<div class="container1">
+		<article id="article-main" class="post1">
+			<section class="post_content">
+				<header class="post_header">
+					<h1 class="post_title">SQL常用语句总结</h1>
+				</header>
+				<!-- 正文 -->
+				<div class="post-body js-gallery" style="word-wrap:break-word;opacity:0;">
+											<p>1. 查看现有数据库</p><pre class="brush:sql;toolbar:false">SHOW&nbsp;DATABASES;</pre><p>2. 新建数据库</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;DATABASE&nbsp;&lt;数据库名&gt;;</pre><p>3. 选择数据库</p><pre class="brush:sql;toolbar:false">USE&nbsp;&lt;数据库名&gt;;</pre><p>4. 从.sql文件引入SQL语句</p><pre class="brush:sql;toolbar:false">SOURCE&nbsp;&lt;.sql文件路径&gt;;</pre><p>5. 删除数据库</p><pre class="brush:sql;toolbar:false">DROP&nbsp;DATABASE&nbsp;&lt;数据库名&gt;;</pre><p>6. 查看当前数据库中的表</p><pre class="brush:sql;toolbar:false">SHOW&nbsp;TABLES;</pre><p><img src="http://p1.pstatp.com/large/pgc-image/1b84a4145ce749678bec40dd16f46b1b" alt="SQL常用语句总结（面试很有用哦）"/></p><p>7. 创建新表</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;TABLE&nbsp;&lt;表名&gt;&nbsp;(
+&nbsp;&lt;列名1&gt;&nbsp;&lt;列类型1&gt;,
+&nbsp;&lt;列名2&gt;&nbsp;&lt;列类型2&gt;,
+&nbsp;&lt;列名3&gt;&nbsp;&lt;列类型3&gt;,
+&nbsp;PRIMARY&nbsp;KEY&nbsp;(&lt;列名1&gt;),
+&nbsp;FOREIGN&nbsp;KEY&nbsp;(&lt;列名2&gt;)&nbsp;REFERENCES&nbsp;&lt;表名2&gt;(&lt;列名2&gt;)
+);</pre><p>主键（PRIMARY KEY）用来标识一条记录（一行），所以每条记录的主键值必须是唯一的。主键可以定义在多列上，这称为联合主键（composite primary key）。</p><p>如果我们把表视作具有某种结构的数组（例如，C语言中的struct），那么外键（FOREIGN KEY）可以视作指针。</p><p>例子：</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;TABLE&nbsp;instructor&nbsp;(
+&nbsp;ID&nbsp;CHAR(5),
+&nbsp;name&nbsp;VARCHAR(20)&nbsp;NOT&nbsp;NULL,
+&nbsp;dept_name&nbsp;VARCHAR(20),
+&nbsp;salary&nbsp;NUMERIC(8,2),&nbsp;
+&nbsp;PRIMARY&nbsp;KEY&nbsp;(ID),
+&nbsp;FOREIGN&nbsp;KEY&nbsp;(dept_name)&nbsp;REFERENCES&nbsp;department(dept_name));</pre><p>在上面的例子中，我们创建了一个教员（instructor）表，该表的主键是ID，外键是教员所在的部门名称（dept_name），关联部门（department）表。此外，教员表还包括姓名（name）、薪水（salary）。其中，姓名有约束NOT NULL，表示姓名这一项不能为空。</p><p><br/></p><p>8. 概述表中的列</p><p>使用如下语句查看表中的列的基本信息：</p><pre class="brush:sql;toolbar:false">DESCRIBE&nbsp;&lt;表名&gt;;</pre><p>下图显示了一些例子：</p><p><img src="http://p1.pstatp.com/large/pgc-image/ffed36f3d28346a2affae31b98703e25" alt="SQL常用语句总结（面试很有用哦）"/></p><p>9. 在表中插入新纪录</p><pre class="brush:sql;toolbar:false">INSERT&nbsp;INTO&nbsp;&lt;表名&gt;&nbsp;(&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;&lt;列名3&gt;,&nbsp;…)VALUES&nbsp;(&lt;值1&gt;,&nbsp;&lt;值2&gt;,&nbsp;&lt;值3&gt;,&nbsp;…);</pre><p>也可以省略列名（依序在所有列上插入新值）：</p><pre class="brush:sql;toolbar:false">INSERT&nbsp;INTO&nbsp;&lt;表名&gt;VALUES&nbsp;(&lt;值1&gt;,&nbsp;&lt;值2&gt;,&nbsp;&lt;值3&gt;,&nbsp;…);</pre><p><br/></p><p>10. 在表中更新记录</p><pre class="brush:sql;toolbar:false">UPDATE&nbsp;&lt;表名&gt;
+&nbsp;SET&nbsp;&lt;列名1&gt;&nbsp;=&nbsp;&lt;值1&gt;,&nbsp;&lt;列名2&gt;&nbsp;=&nbsp;&lt;值2&gt;,&nbsp;...
+&nbsp;WHERE&nbsp;&lt;条件&gt;;</pre><p>11. 清空表</p><pre class="brush:sql;toolbar:false">DELETE&nbsp;FROM&nbsp;&lt;表名&gt;;</pre><p><br/></p><p>12. 删除表</p><pre class="brush:sql;toolbar:false">DROP&nbsp;TABLE&nbsp;&lt;表名&gt;;</pre><p><br/></p><p>13. SELECT</p><p>SELECT语句可以从表中选择数据：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;;</pre><p>以下语句选择所有内容：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;&lt;表名&gt;;</pre><p><img src="http://p3.pstatp.com/large/pgc-image/707e109a36ca4627a897613a24f6a281" alt="SQL常用语句总结（面试很有用哦）"/></p><p>（artment）表和课程（course）表中的所有内容</p><p><br/></p><p>14. SELECT DISTINCT</p><p>SELECT DISTINCT过滤掉了重复的值：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;DISTINCT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;;</pre><p><img src="http://p3.pstatp.com/large/pgc-image/e31cf81d2c8c40c3a6e50598cc1ff79e" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>15. WHERE</p><p>我们之前在更新记录时已经用到了WHERE关键字，用来指明条件。这里我们稍微详细一点地介绍下WHERE。</p><p>WHERE的条件通常是：</p><p><span style="color: rgb(255, 0, 0);">比较文本（text）</span></p><p><span style="color: rgb(255, 0, 0);">比较数字（numbers）</span></p><p><span style="color: rgb(255, 0, 0);">AND、OR、NOT等逻辑运算</span></p><p>让我们来看一些例子：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;WHERE&nbsp;dept_name=&#39;Comp.&nbsp;Sci.&#39;;
+SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;WHERE&nbsp;credits&gt;3;
+SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;WHERE&nbsp;dept_name=&#39;Comp.&nbsp;Sci.&#39;&nbsp;AND&nbsp;credits&gt;3;</pre><p><img src="http://p1.pstatp.com/large/pgc-image/125359ce138843a39e5dce38a2a6721a" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>16. GROUP BY</p><p>GROUP BY语句可以分组结果，常用于COUNT、MAX、MIN、SUM、AVG等聚合函数（aggregate functions）。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;GROUP&nbsp;BY&nbsp;&lt;列名&gt;;</pre><p>让我们来看一个例子，列出每个部门的课程数量：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;COUNT(course_id),&nbsp;dept_name&nbsp;
+&nbsp;FROM&nbsp;course&nbsp;
+&nbsp;GROUP&nbsp;BY&nbsp;dept_name;</pre><p><img src="http://p9.pstatp.com/large/pgc-image/4c0bc3fe052a4f069fff9bf23ac938a9" alt="SQL常用语句总结（面试很有用哦）"/></p><p>17. HAVING</p><p>乍看起来，HAVING和WHERE很像：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;GROUP&nbsp;BY&nbsp;&lt;列名x&gt;
+&nbsp;HAVING&nbsp;&lt;条件&gt;;</pre><p>那么，HAVING和WHERE有什么不同呢？让我们先来看一个例子，列出开了不止一门课程的部门开设的课程数：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;COUNT(course_id),&nbsp;dept_name&nbsp;
+&nbsp;FROM&nbsp;course&nbsp;
+&nbsp;GROUP&nbsp;BY&nbsp;dept_name&nbsp;
+&nbsp;HAVING&nbsp;COUNT(course_id)&gt;1;</pre><p>这里HAVING不能换成WHERE，因为WHERE直接针对行操作，且在GROUP BY之前运行（即先通过WHERE筛选行，之后再将筛选出的行通过GROUP BY分组）。假设SQL中不存在HAVING语句，那么我们只能先新建一张表，将COUNT(course_id)作为新表的列，然后在新表上再通过WHERE进行筛选（当然，实际上SQL提供了派生表、CTE等机制，并不用真的手工建新表）。</p><p><img src="http://p3.pstatp.com/large/pgc-image/019bd7f8c4eb44f89e3e05996e88511e" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>18. ORDER BY</p><p>ORDER BY可以对结果进行排序，在没有明确指定ASC（升序）或DESC（降序）的情况下，默认按升序排列。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+FROM&nbsp;&lt;表名&gt;
+ORDER&nbsp;BY&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…,&nbsp;ASC|DESC;</pre><p>例子：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;ORDER&nbsp;BY&nbsp;credits;
+SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;ORDER&nbsp;BY&nbsp;credits&nbsp;DESC;</pre><p><img src="http://p1.pstatp.com/large/pgc-image/5ff35794c65a4495911ec5f35449c383" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>19. BETWEEN</p><p>BETWEEN语句用于指定区间。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;WHERE&nbsp;&lt;列名x&gt;&nbsp;BETWEEN&nbsp;&lt;值1&gt;&nbsp;AND&nbsp;&lt;值2&gt;;</pre><p>其中“值”可能是数字，文本，乃至日期等。</p><p>例如，列出薪资在50000和100000之间的教员：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;instructor&nbsp;WHERE&nbsp;salary&nbsp;BETWEEN&nbsp;50000&nbsp;AND&nbsp;100000;</pre><p><img src="http://p1.pstatp.com/large/pgc-image/ea31f28e794f4d1c98db31873f18b9e1" alt="SQL常用语句总结（面试很有用哦）"/></p><p>20. LIKE</p><p>LIKE用于匹配文本中的特定模式。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;WHERE&nbsp;&lt;列名x&gt;&nbsp;LIKE&nbsp;&lt;模式&gt;;</pre><p>模式中可以使用以下两个通配符：</p><p><span style="color: rgb(255, 0, 0);">% （零个、一个或多个字符）</span></p><p><span style="color: rgb(255, 0, 0);">_ （单个字符）</span></p><p>例子：列出课程名中包含“to”的课程，以及课程ID以“CS-”开头的课程。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;WHERE&nbsp;title&nbsp;LIKE&nbsp;&#39;%to%&#39;;
+SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;WHERE&nbsp;course_id&nbsp;LIKE&nbsp;&#39;CS-___&#39;;</pre><p><img src="http://p3.pstatp.com/large/pgc-image/b242617518744bbfa7908ba31ec1de05" alt="SQL常用语句总结（面试很有用哦）"/></p><p>21. IN<br/></p><p>IN语句表示值属于某个集合。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;WHERE&nbsp;&lt;列名n&gt;&nbsp;IN&nbsp;(&lt;值1&gt;,&nbsp;&lt;值2&gt;,&nbsp;…);</pre><p>例子：列出计算机科学、物理、电子工程部门的学生。</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;student&nbsp;WHERE&nbsp;dept_name&nbsp;IN&nbsp;(&#39;Comp.&nbsp;Sci.&#39;,&nbsp;&#39;Physics&#39;,&nbsp;&#39;Elec.&nbsp;Eng.&#39;);</pre><p><img src="http://p3.pstatp.com/large/pgc-image/cbd56b038157427f80e5642a530752ce" alt="SQL常用语句总结（面试很有用哦）"/></p><p>22. JOIN</p><p>JOIN用来组合两张以上表中的值。下图展示了JOIN的三种类型：</p><p><img src="http://p3.pstatp.com/large/pgc-image/2f8c51351cc44eb899415257872fecc0" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>图片来源：zeroturnaround.com</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名1&gt;
+&nbsp;JOIN&nbsp;&lt;表名2&gt;
+&nbsp;ON&nbsp;&lt;表名1.列名x&gt;&nbsp;=&nbsp;&lt;表名2.列名x&gt;</pre><p>让我们来看三个例子，分别对应三种JOIN的类型。</p><p>第一个例子，列出课程时包含开设课程的部门详情：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;*&nbsp;FROM&nbsp;course&nbsp;
+&nbsp;JOIN&nbsp;department&nbsp;
+&nbsp;ON&nbsp;course.dept_name=department.dept_name;</pre><p><img src="http://p9.pstatp.com/large/pgc-image/7ade415f265c4dedad612d6d431650f0" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>第二个例子，列出所有具有前置课程的课程的详情：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;prereq.course_id,&nbsp;title,&nbsp;dept_name,&nbsp;credits,&nbsp;prereq_id&nbsp;
+&nbsp;FROM&nbsp;prereq&nbsp;
+&nbsp;LEFT&nbsp;OUTER&nbsp;JOIN&nbsp;course&nbsp;
+&nbsp;ON&nbsp;prereq.course_id=course.course_id;</pre><p><img src="http://p3.pstatp.com/large/pgc-image/756ca16c834b4f0bb1c8759f3166673b" alt="SQL常用语句总结（面试很有用哦）"/></p><p>最后一个例子，列出所有课程的详情，不管是否具有前置课程：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;course.course_id,&nbsp;title,&nbsp;dept_name,&nbsp;credits,&nbsp;prereq_id&nbsp;
+&nbsp;FROM&nbsp;prereq&nbsp;
+&nbsp;RIGHT&nbsp;OUTER&nbsp;JOIN&nbsp;course&nbsp;
+&nbsp;ON&nbsp;prereq.course_id=course.course_id;</pre><p><img src="http://p1.pstatp.com/large/pgc-image/d4cc719f79dd49d38a2abc6cdd518f2a" alt="SQL常用语句总结（面试很有用哦）"/></p><p>23. 视图</p><p>视图（view）是虚拟的SQL表。它包含行和列，和一般的SQL表格很类似。视图总是显示数据库中的最新数据。</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;VIEW</pre><p>创建视图：</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;VIEW&nbsp;&lt;视图名&gt;&nbsp;AS
+&nbsp;SELECT&nbsp;&lt;列名1&gt;,&nbsp;&lt;列名2&gt;,&nbsp;…
+&nbsp;FROM&nbsp;&lt;表名&gt;
+&nbsp;WHERE&nbsp;&lt;条件&gt;;</pre><p>删除视图：</p><pre class="brush:sql;toolbar:false">DROP&nbsp;VIEW&nbsp;&lt;视图名&gt;;</pre><p>例如，创建3学分的课程视图：</p><pre class="brush:sql;toolbar:false">CREATE&nbsp;VIEW&nbsp;my_view&nbsp;AS
+&nbsp;SELECT&nbsp;*&nbsp;FROM&nbsp;course
+&nbsp;WHERE&nbsp;credits=3;</pre><p><img src="http://p3.pstatp.com/large/pgc-image/cf0adfd016fe409a922bdb4091cb3efa" alt="SQL常用语句总结（面试很有用哦）"/></p><p><br/></p><p>24. 聚合函数</p><p>我们之前已经提到聚合函数，这里列出最常用的一些聚合函数：</p><p><span style="color: rgb(255, 0, 0);">COUNT(列名) 返回行数</span></p><p><span style="color: rgb(255, 0, 0);">SUM(列名) 返回指定列的值之和</span></p><p><span style="color: rgb(255, 0, 0);">AVG(列名) 返回指定列的平均值</span></p><p><span style="color: rgb(255, 0, 0);">MIN(列名) 返回指定列的最小值</span></p><p><span style="color: rgb(255, 0, 0);">MAX(列名) 返回指定列的最大值</span></p><p><br/></p><p>25. 嵌套子查询</p><p>在SQL请求中，可以嵌套SELECT-FROM-WHERE表达式，称为嵌套子查询（nested subqueries）。</p><p>例如，查找2009年秋、2010年春都开的课程：</p><pre class="brush:sql;toolbar:false">SELECT&nbsp;DISTINCT&nbsp;course_id
+&nbsp;FROM&nbsp;section
+&nbsp;WHERE&nbsp;semester&nbsp;=&nbsp;‘Fall’&nbsp;AND&nbsp;year=&nbsp;2009&nbsp;AND&nbsp;course_id&nbsp;IN&nbsp;(
+&nbsp;SELECT&nbsp;course_id
+&nbsp;FROM&nbsp;section
+&nbsp;WHERE&nbsp;semester&nbsp;=&nbsp;‘Spring’&nbsp;AND&nbsp;year=&nbsp;2010
+);</pre><p><img src="http://p1.pstatp.com/large/pgc-image/0261d0967ee7416789ad7b8fbcc9e443" alt="SQL常用语句总结（面试很有用哦）"/></p><p>转载自：https://www.toutiao.com/a6721980813409255950/?timestamp=1565220223&amp;app=news_article&amp;group_id=6721980813409255950&amp;req_id=201908080723430100170262232353A94</p><p><br/></p>				</div>
+
+				<!-- 底部-转载 -->
+									<div class="announce">
+						<span>转载请注明转自:</span>
+			        	<a href="../index.html" title="刘贝个人博客">刘贝个人博客的</a>
+			        	《<a rel="bookmark" href="116.html" title="刘贝个人博客|SQL常用语句总结">SQL常用语句总结</a>》
+			        </div>
+				
+				<!-- 底部-标签-时间-阅读量 -->
+									<div class="meta split split--responsive cf">
+						<div class="split__title">
+							<time datetime="2019-08-07 16:27:55">2019-08-07 16:27:55发布 | 115人读过</time>
+							<br/>
+							<time>
+								<span>分类：mysql | </span>
+																	<span>关键字：<a href="javascript:;" title="刘贝个人博客|SQL常用语句总结">mysql</a></span>
+															</time>
+						</div>
+						<br/>
+						 
+							<div id="social-share"><span class="entypo-share"><i class="iconfont">&#xe614;</i>分享文章</span></div>
+						 
+							<div class="slide"><a class="btn-slide" title="switch down"><i class="iconfont">&#xe615;</i>折叠评论</a></div>
+											</div>
+				
+				<!-- 其他 -->
+									<!-- <div class="clearfix" id="social1">
+						<div class="social1-main clearfix">
+							<span class="like">
+								<a href="javascript:;" class="dingzan" title="点赞">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞
+									<i class="count">0</i>
+								</a>
+							</span>
+							<div class="shang-p">
+								<div class="shang-empty"><span></span></div>
+								<span class="tipso_style" id="tip-p">
+								<span class="shang-s">
+									<a title="赞助本站" href="javascript:;">赏</a></span>
+								</span>
+							</div>
+							<div class="share-sd">
+								<span class="share-s">
+									<a href="javascript:;" id="social-share" title="分享">
+										<i class="fa fa-share-alt" aria-hidden="true"></i> 分享
+									</a>
+								</span>
+							</div>
+						</div>
+					</div> -->
+							</section>
+		</article>
+	</div>
+
+			<svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<div id="social">
+			<ul>
+				<li>
+					<a href="javascript:;" id="qzone" target="_blank"><i class="iconfont">&#xe67f;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="weibo" target="_blank"><i class="iconfont">&#xe680;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="douban" target="_blank"><i class="iconfont">&#xe681;</i></a>
+				</li>
+				<li>
+					<a href="javascript:;" id="twitter" target="_blank"><i class="iconfont">&#xe683;</i></a>
+				</li>
+			</ul>
+		</div>
+		<svg id="dwTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<script>
+			$(function(){
+				var link = location.href;
+				var title = "SQL常用语句总结";
+				var	desc = `MySql 基本操作全都在这里了`;
+				var source = "刘贝个人博客";
+				var qzone = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				var weibo = 'http://service.weibo.com/share/share.php?url='+link+'&sharesource='+source+'&title='+title+'&pic=pic&appkey=key';
+				var fiend = 'http://connect.qq.com/widget/shareqq/index.html?url='+link+'&sharesource='+source+'&title='+title+'&pics=pic&summary='+desc;
+				$('#qzone').attr('href',qzone);
+				$('#weibo').attr('href',weibo);
+				$('#douban,#twitter').attr('href',fiend);
+			});
+		</script>
+	
+	<!-- 评论 -->
+			<div id="panel" class="clearfix">
+			<section class="comments">
+				<div class="comments-main">
+					<div id="comments-list-title"><span>0</span> 条评论</div>
+					<ul class="commentwrap clearfix">
+											</ul>
+					<div class="clearfix">
+				    					    </div>
+				</div>
+			</section>
+		</div>
+
+		<!-- 回复 -->
+		<div id="respond" class="comment-respond clearfix">
+			<form id="commentform" class="clearfix">
+				<input type="hidden" name="msg_pid" id="msg_pid" value="0">
+				<input type="hidden" name="msg_img" id="msg_img" value="/upload/avatar/2019-06-25/hi_5cb1ad3d68b7d.jpg">
+				<input type="hidden" name="art_id" id="art_id" value="116">
+				<div class="clearfix"></div>
+				<div class="author-info">
+					<input type="text" name="msg_name" id="msg_name" placeholder="昵  称 : " value=""/>
+					<input type="text" name="msg_email" id="msg_email" placeholder="邮  箱 : " value=""/>
+					<input type="text" name="msg_link" id="msg_link" placeholder="网  址 : " value=""/>
+				</div>
+				<div class="clearfix"></div>
+				<div class="comment-form-info">
+					<div class="real-time-gravatar"><img id="real-time-gravatar" src="../upload/avatar/2019-06-25/hi_5cb1ad3d68b7d.jpg"/></div>
+					<p class="input-row">
+						<i class="row-icon"></i>
+						<textarea class="text_area" rows="5" cols="80" name="msg_content" id="msg_content" tabindex="4" placeholder="既然来了，你不说两句吗？(°∀°)ﾉ……"></textarea>
+						<input type="button" class="button" id="messageAdd" value="发送" data-url='/index/index/commentadd.html' />
+					</p>
+				</div>
+			</form>
+		</div>
+	
+	<!-- 文章分页 -->
+			<div class="navpost-part">
+			<div id="NextPrevPosts" style="visibility:inherit;">
+									<div class="prev" data-aos="slide-right" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe625;</i></div>
+						<div class="preview">
+							<img class="pull-left featuredImg" src="../upload/avatar/2019-06-25/hi_5cb1a91d022c8.png" alt="刘贝个人博客|有哪些值得推荐的下载软件的网站？">
+							<a class="pull-left preview-content bold" href="106.html" title="刘贝个人博客|有哪些值得推荐的下载软件的网站？">
+								<span>有哪些值得推荐的下载软件的网站？</span>
+							</a>
+						</div>
+					</div>
+									<div class="next" data-aos="slide-left" data-aos-delay="1.5s">
+						<div class="arrow"><i class="iconfont">&#xe623;</i></div>
+						<div class="preview">
+							<img class="pull-right featuredImg" src="../upload/avatar/2019-06-25/hi_5cb83420c0ee5.jpg" alt="刘贝个人博客|博客后台更新至v5.0">
+							<a class="pull-right preview-content bold" href="105.html" title="刘贝个人博客|博客后台更新至v5.0">
+								<span>博客后台更新至v5.0</span>
+							</a>
+						</div>
+					</div>
+							</div>
+		</div>
+		<script>
+			$(function(){
+				document.getElementById("NextPrevPosts").style.display = "block";
+				$(window).on("resize scroll",function() {
+				    var scrollTop = $(window).scrollTop();
+			    	if(scrollTop > 1) {
+						document.getElementById("NextPrevPosts").style.display = "none"
+					} else {
+						document.getElementById("NextPrevPosts").style.display = "block"
+					}
+				});
+			});
+		</script>
+	<!-- 结束 -->
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+<script type="text/javascript">
+	$(function(){
+		// 图片操作
+		$('#article-main').find('p').each(function(index) {
+			$(this).addClass('clearfix');
+		});
+		$('#article-main').find('p>img').each(function(index) {
+			var src = $(this).attr('src');
+			var width = $(this).width();
+			var height = $(this).height();
+			$(this).before('<quote class="pullquote"><a href="https://www.lbbug.com/id/'+src+'" rel="gallery" title=\'刘贝个人博客|SQL常用语句总结\'><img src="https://www.lbbug.com/id/'+src+'" alt="'+src+'" class="alignnone size-full" style="width:'+width+'px;height:'+height+'px" alt=\'刘贝个人博客|SQL常用语句总结\'></a></quote>').remove();
+		});
+		// 代码格式化
+		SyntaxHighlighter.all();
+        $("table .syntaxhighlighter").each(function () {
+            if (!$(this).hasClass("nogutter")) {
+                var $gutter = $($(this).find(".gutter")[0]);
+                var $codeLines = $($(this).find(".code .line"));
+                $gutter.find(".line").each(function (i) {
+                    $(this).height($($codeLines[i]).height());
+                    $($codeLines[i]).height($($codeLines[i]).height());
+                });
+            }
+        });
+        $('.post-body').css('opacity',1);
+	});
+
+ //    $(function(){
+	// 	$(".shang-s").find('a').mouseenter(function(){
+	// 		var offset = $('#social1').offset();
+	// 		var left = isMobile() ? '10%;' : (offset.left+250)+'px;';
+	// 		var html = "<div class='tipso_bubble' style='top:"+(offset.top-280)+"px;left:"+left+"' class='animated fadeInDown'>\
+	// 				<span id='shang'>\
+	// 					<span class='shang-main'>\
+	// 						<h4><i class='fa fa-heart' aria-hidden='true'></i> 您可以选择一种方式赞助本站</h4>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payAli.png' alt='支付宝扫一扫'/>\
+	// 							<h4>支付宝扫一扫赞助</h4>\
+	// 						</span>\
+	// 						<span class='shang-img'>\
+	// 							<img src='https://www.lbbug.com/index/images/payWechat.png' alt='微信扫一扫'/><h4>微信钱包扫描赞助</h4>\
+	// 						</span>\
+	// 						<span class='clear'></span>\
+	// 					</span>\
+	// 				</span>\
+	// 			</div>";
+	// 		$("body").append(html);
+	// 	});
+	// 	$(".shang-s").find('a').mouseleave(function(){
+	// 		$('.tipso_bubble').remove();
+	// 	});
+	// });
+</script>
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=5925"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="format-detection" content="telphone=no, email=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刘贝个人博客会员管理系统</title>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="css/dashboard.css" rel="stylesheet" />
+  <script src="../js/jquery1.12.4.min.js"></script>
+  <script src="../js/jquery.cookie.min.js"></script>
+  <script src="../layui-2.5.4/layui.all.js"></script>
+  <script src="js/vendors/bootstrap.bundle.min.js"></script>
+  <script src="js/core.js"></script>
+  <style>.layui-upload-file{opacity: 0;position: absolute;width: 0;height: 0;}</style>
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <div class="page">
+                    
+	<div class="page-single">
+	    <div class="container">
+			<div class="row">
+				<div class="col col-login mx-auto">
+					<div class="text-center mb-6">
+						<h4>刘贝个人博客会员管理系统v1.0</h4>
+					</div>
+					<form class="card" action="login.html" method="post">
+						<div class="card-body p-6">
+							<div class="card-title">登入你的帐户</div>
+							<div class="form-group">
+								<label class="form-label">用户名</label>
+								<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="用户名" id="username" name="username">
+							</div>
+							<div class="form-group">
+								<label class="form-label">
+									密码
+									<a href="forgetpassword.html" class="float-right small">忘记密码？</a>
+								</label>
+								<input type="password" class="form-control" placeholder="密码" id="password" name="password">
+							</div>
+							<div class="form-group">
+								<label class="form-label">验证码</label>
+								<input type="text" class="form-control" placeholder="验证码" id="code" name="code" value="" style="width:70%;float:left;margin-right: 5px;">
+								<img src="verify.html" alt="" style="width:28%;height: 38px;" onclick="javascript:this.setAttribute('src','/index/user/verify.html');">
+							</div>
+							<div class="form-group">
+		                        <label class="custom-control custom-checkbox custom-control-inline">
+		                            <input type="checkbox" class="custom-control-input" name="check" id="check" checked="checked" value="86400">
+		                            <span class="custom-control-label">保持登录</span>
+	                          	</label>
+		                    </div>
+							<div class="form-footer" style="margin-top: 0;">
+								<button type="button" class="btn btn-primary btn-block" onclick="logins()">登 录</button>
+							</div>
+						</div>
+					</form>
+					<div class="text-center text-muted">
+						还没有帐号吗? <a href="register.html">注册一个新账号</a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+
+	<script>
+    	$('input').bind('keyup',function(event){
+	        if (event.keyCode == "13") logins();
+	    });
+
+	    function logins() {
+	    	$.ajax({
+	    		url: '/index/user/login.html',
+	    		type: 'post',
+	    		data: $('form').serialize(),
+	    		success:function(res) {
+	    			console.log(res)
+	    			if(!res.code) {
+	    				layer.msg(res.msg,{icon:2});
+	    			}
+	    			else {
+	    				layer.msg(res.msg,{icon:1});
+	    				setTimeout(function(){
+	    					location.href = res.url;
+	    				},1500);
+	    			}
+	    		}
+	    	});
+	    }
+	</script>
+
+            </div>
+
+
+            <script>
+            // 实时检测登录状态
+            // setInterval(function(){
+            //   $.post('', function(res) {
+            //     if(!res.code) {
+            //       location.replace(res.url);
+            //     }
+            //   });
+            // },1500);
+        </script>
+    </body>
+</html>

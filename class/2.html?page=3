@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="刘贝,贝哥,贝,作者:刘贝,qq:993008916,email:993008916@qq.com"/>
+	<meta name="keywords" content="刘贝个人博客,刘贝的博客,刘贝博客"/>
+	<meta name="description" content="刘贝个人博客 | 学习分享,经验交流,个人生活"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>刘贝个人博客 | 分享学习经验，记录生活点滴</title>
+    <link rel="stylesheet" type="text/css" href="../index/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../index/font-awesome-4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="../index/js/jquery1.12.4.min.js"></script>
+	<script src="../index/js/jquery.cookie.min.js"></script>
+    <script src="../index/js/layer3.1.1/layer.js"></script>
+
+    
+
+</head>
+<body class="home blog custom-background round-avatars">
+	<!-- 导航 -->
+<div class="navi" data-aos="fade-down">
+	<div class="bt-nav">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+	<div class="navbar animated fadeInRight">
+		<div class="inner">
+			<nav id="site-navigation" class="main-navigation">
+				<div id="main-menu" class="main-menu-container">
+					<div class="menu-menu-container">
+						<ul id="primary-menu" class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page  active treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="1.html" target="" data-id="1" id="nav-1"><i class=""></i>首页</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://vipmovie.lbbug.com" target="_blank" data-id="2" id="nav-2"><i class=""></i>VIP视频解析</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://wxjiance.lbbug.com" target="_blank" data-id="3" id="nav-3"><i class=""></i>微信域名检测</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://shorturl.lbbug.com" target="_blank" data-id="4" id="nav-4"><i class=""></i>短链在线生成</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="https://easy.lbbug.com" target="_blank" data-id="5" id="nav-5"><i class=""></i>EasyAdmin 权限管理系统</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="2.html" target="" data-id="6" id="nav-6"><i class=""></i>学习</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="3.html" target="" data-id="7" id="nav-7"><i class=""></i>php、mysql、nginx</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="4.html" target="" data-id="8" id="nav-8"><i class=""></i>thinkphp5、laravel、composer</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="5.html" target="" data-id="9" id="nav-9"><i class=""></i>linux、windows</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="6.html" target="" data-id="10" id="nav-10"><i class=""></i>html、css、js、jquery</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="7.html" target="" data-id="11" id="nav-11"><i class=""></i>微信公众号、微信小程序、微信支付</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="12.html" target="" data-id="25" id="nav-25"><i class=""></i>Sublime Text 专题</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="8.html" target="" data-id="12" id="nav-12"><i class=""></i>生活</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="9.html" target="" data-id="13" id="nav-13"><i class=""></i>图片</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="10.html" target="" data-id="14" id="nav-14"><i class=""></i>杂谈</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="11.html" target="" data-id="15" id="nav-15"><i class=""></i>随手记</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../archive.html" target="" data-id="16" id="nav-16"><i class=""></i>归档</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../update.html" target="" data-id="17" id="nav-17"><i class=""></i>说说</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../website.html" target="" data-id="18" id="nav-18"><i class=""></i>优秀网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page  treeview">
+        	<span class="menu-dropdown"><i class="iconfont"></i></span>
+			<a class="" href="javascript:;" target="" data-id="21" id="nav-21"><i class=""></i>关于</a>
+			<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/1.html" target="" data-id="22" id="nav-22"><i class=""></i>关于我</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../id/2.html" target="" data-id="23" id="nav-23"><i class=""></i>关于网站</a>
+			
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../message.html" target="" data-id="24" id="nav-24"><i class=""></i>留言板</a>
+			
+		</li></ul>
+		</li><li class="menu-item menu-item-type-post_type menu-item-object-page ">
+        	
+			<a class="J_menuItem" href="../index/user/login" target="_blank" data-id="27" id="nav-27"><i class=""></i>登录 beta</a>
+			
+		</li>						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		if(!"") {
+			$('.navi').addClass('close');
+		}
+	});
+</script>
+	<!-- 背景图 -->
+<div class="Yarn_Background" style="background-image: url(../upload/blogCover/2019-08-07/auto_105645_dedd36.jpg);"></div>
+<!-- 搜索 -->
+<div class="hebin" data-aos="fade-down">
+	<i class=" js-toggle-search iconfont">&#xe60e;</i>
+</div>
+<div class="js-search search-form search-form--modal" role="search">
+	<div class="search-form__inner">
+		<div>
+			<div id="search-container" class="ajax_search">
+				<div id="searchform">
+					<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="输入关键字进行查询" name="s" id="search-input" />
+						<ul id="search_filtered" class="search_filtered"></ul>
+					</div>
+					<input type="button" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					<br/><br/>
+					<input type="button" name="button" class="searchsubmit" value="返回" onclick="javascript:$('.js-search').removeClass('is-visible');" style="color:#fff;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 用户 -->
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+	<div class="site-branding text-center" style="padding-top: 80px">
+		<a href="../id/1.html">
+			<figure>
+				<img class="custom-logo avatar" src="../index/images/headimg.png" alt="刘贝个人博客"/>
+			</figure>
+		</a>
+		<h3 class="blog-description">
+			<p>LiuBei</p>
+			<p style="font-size:14px;white-space: pre-line;">青春渐行渐远，一去不复返 
+用有限的时间来记录那些无限美好的事情</p>
+		</h3>
+	</div>
+	<!-- .site-branding -->
+	<div class="decor-part">
+		<div id="particles-js"></div>
+	</div>
+	<div class="animation-header">
+		<div class="decor-wrapper">
+			<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+	</div>
+</header>
+	
+<script src="../index/js/info.js?v=5094" id="info" data-flag="index" data-id=""></script>
+
+<div id="main" class="content">
+	<div class="container">
+		<article itemscope="itemscope">
+			<div class="posts-list js-posts">
+										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/36.html" class="status_btn" title="刘贝个人博客|nload 常用指令说明">nload 常用指令说明</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">linux | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">用途: 用来即时监看网路状态和各ip所使用的频宽</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：linux</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/119.html" class="status_btn" title="刘贝个人博客|js文本截取超出指定字数显示省略号(...)">js文本截取超出指定字数显示省略号(...)</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">除了用text-overflow:ellipsis属性来实现单行文本的溢出显示省略号(&hellip;)，用js的方法也可以实现。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：js,长文本</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/80.html" class="status_btn" title="刘贝个人博客|php解决stream_socket_client、file_get_content无法请求https">php解决stream_socket_client、file_get_content无法请求https</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">php使用stream_socket_client报错，并且使用file_get_content无法请求https</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/72.html" class="status_btn" title="刘贝个人博客|centos修改主机名">centos修改主机名</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">linux | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">用虚拟机环境时忘了修改用户名，记录下centos6、7修改用户名的步骤</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：linux</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/71.html" class="status_btn" title="刘贝个人博客|linux普通用户显示bash-4.1$解决办法">linux普通用户显示bash-4.1$解决办法</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">linux | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">今天新建了一个用户，终端中显示 -bash-4.1$而不是 [liubei@locahost]</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：linux</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/62.html" class="status_btn" title="刘贝个人博客|MySQL中常用错误码总结">MySQL中常用错误码总结</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">mysql | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">本文主要和大家分享MySQL中常用错误码总结，希望能帮助大家对MySQL中错误码有一个更深的了解。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：mysql</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/48.html" class="status_btn" title="刘贝个人博客|html不识别\n解决方法">html不识别\n解决方法</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">css | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">html 识别不了 &lsquo;\n&rsquo;，只要在结果所在的标签设置css样式</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：css</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/45.html" class="status_btn" title="刘贝个人博客|js时间倒计时">js时间倒计时</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">可按自己的样式稍作修改</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：js</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/3.html" class="status_btn" title="刘贝个人博客|TP5 nginx下配置pathinfo和隐藏index.php">TP5 nginx下配置pathinfo和隐藏index.php</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">tp5.1 | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">location ~ [^/].php(/|$) {
+    fastcgi_split_path_info ^((?U).+.php)(/?.+)$;
+    fastcgi_param PATH_INFO $fastcgi_path_info;
+    fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;  
+  } ....</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx,tp5,php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/69.html" class="status_btn" title="刘贝个人博客|Nginx之upstream分配方式">Nginx之upstream分配方式</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;"> Nginx的upstream支持5种分配方式，下面将会详细介绍，其中，前三种为Nginx原生支持的分配方式，后两种为第三方支持的分配方式</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/24.html" class="status_btn" title="刘贝个人博客|原生PHP使用PHPExcel导出数据">原生PHP使用PHPExcel导出数据</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">phpExcel的github上已经说明了，phpExcel最后的版本是1.8.1，已经不再维护了，新的项目是PhpSpreadsheet。PhpSpreadsheet是PHPExcel的下一个版本，它提高了兼容性，极大地提高了代码基础质量（命名空间、PSR遵从性、使用最新的PHP语言特性等）。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/84.html" class="status_btn" title="刘贝个人博客|解决微信下苹果手机音乐/视频不能自动播放问题">解决微信下苹果手机音乐/视频不能自动播放问题</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">微信公众号 | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">在做微信h5开发的时候需要播放背景音乐，使用html的audio标签可以实现，但是在开发过程中发现iPhone手机打开h5页面时音乐并不会自动播放，而是要点一下屏幕才会自动播放</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：微信</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/70.html" class="status_btn" title="刘贝个人博客|Nginx之proxy_pass代理转发">Nginx之proxy_pass代理转发</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">在nginx中配置proxy_pass代理转发时，如果在proxy_pass后面的url加/，表示绝对根路径；如果没有/，表示相对路径，把匹配的路径部分也给代理走</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/68.html" class="status_btn" title="刘贝个人博客|linux下使用free命令查看实际内存占用（可用内存）">linux下使用free命令查看实际内存占用（可用内存）</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">linux | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">linux下在终端环境下可以使用free命令看到系统实际使用内存的情况，一般用free -m方式查看内存占用情况（兆为单位）。而系统实际可用内存是不是free部分呢</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：free,linux</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/52.html" class="status_btn" title="刘贝个人博客|nginx 限制ip访问">nginx 限制ip访问</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">nginx | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">采集和防止采集是一个经久不息的话题，一方面都想搞别人的东西，另一方面不想自己的东西被别人搞走</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：nginx</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/83.html" class="status_btn" title="刘贝个人博客|PHP错误开启/关闭">PHP错误开启/关闭</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 1年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">程序只要在运行，就免不了会出现错误，错误很常见，比如Error，Notice，Warning等等，这篇文章具体说一下PHP的错误类型和屏蔽方法。</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/50.html" class="status_btn" title="刘贝个人博客|Linux外网带宽占用高排查">Linux外网带宽占用高排查</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">linux | 2年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">由于外网带宽使用率会影响ssh连接，当外网带宽占用过高时，ssh登录服务器可能会出现慢、卡等情况</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：带宽,iftop</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/4.html" class="status_btn" title="刘贝个人博客|JS检测用户在浏览器中返回跳转其他页面">JS检测用户在浏览器中返回跳转其他页面</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">javascript | 2年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">手机端监听用户返回跳转其他页面</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：js,history</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/40.html" class="status_btn" title="刘贝个人博客|laravel 5.4 使用mail类发送邮件时无法链接邮箱">laravel 5.4 使用mail类发送邮件时无法链接邮箱</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">laravel5.4 | 2年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">没有安装CA证书导致的！！！</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：laravel</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 										<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+																	<div class="status_user" style="background-image: url(../index/images/no-image.png);">
+																	<div class="status_section">
+										<a href="../id/44.html" class="status_btn" title="刘贝个人博客|php使用stream_socket_client()报错">php使用stream_socket_client()报错</a>
+										<p class="section_p" style="margin-top:5px;font-size: 13px;">php | 2年前</p>
+										<p class="section_p" style="margin-top:10px;white-space: pre-wrap;">stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed</p>
+																					<p class="section_p" style="margin-top:5px;font-size: 13px;">关键字：php</p>
+																			</div>
+								</div>
+							</div>
+						</div>
+					 							</div>
+		</article>
+
+		<!-- 分页 -->
+		<div class="clearfix" style="text-align: right;">
+	    	<style>
+            #easyPage p{margin:0;padding:0;border:none;}
+           	.cl:after,.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}
+			.cl, .clearfix{zoom: 1}
+            #easyPage{width:100%;padding:5px 0;}
+            #easyPage p.pageRemark{border-style:none;background:none;margin-right:0px;color:#666;font-size:14px;}
+            #easyPage p.pageRemark b{color:red;}
+            #easyPage a{display:block;float:left;margin-right:10px;padding:0 10px;height:25px;line-height:25px;border:1px #cccccc solid;background:#fff;text-decoration:none;color:#808080;font-size:14px;}
+            #easyPage p.pageEllipsis{border-style:none;background:none;padding:0;color:#808080;}
+            #easyPage p{float:left;padding:0 10px;height:25px;line-height:25px;color:#bbb;border:1px #ccc solid;background:#fcfcfc;margin-right:8px;font-size:14px}
+            #easyPage a.cur{border:1px solid #bebbaa;background:#bebbaa;color:#fff;}
+        </style><div style='float: right;'><div id='easyPage' class='clearfix'><a href='2.html?page=1' title='首页'>首页</a><a href='2.html?page=2' title='上一页'>上一页</a><a href='2.html?page=1' title='第1页'>1</a><a href='2.html?page=2' title='第2页'>2</a><a href='2.html?page=3' title='第3页' class='cur'>3</a><a href='2.html?page=4' title='第4页'>4</a><a href='2.html?page=4' title='下一页'>下一页</a><a href='2.html?page=4' title='尾页'>尾页</a></div></div>	    </div>
+	</div>
+</div>
+
+	<style>
+.socialicon {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 5px;
+    background:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.socialicon i {
+    font-size: 25px;
+    line-height:55px;
+    color: #fff;
+}
+</style>
+
+<!-- 底部 -->
+<footer id="footer" class="overlay animated from-top">
+	<div class="decor-wrapper">
+		<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+			<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+			<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+			<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+			<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+		</svg>
+	</div>
+	<div class="socialize" data-aos="zoom-in">
+		<li>
+			<a title="qq" class="socialicon" href="http://wpa.qq.com/msgrd?v=3&uin=993008916&site=qq&menu=yes" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-qq" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li class="wechat">
+			<a title="weixin" class="socialicon" href="javascript:;" title="刘贝个人博客">
+				<i class="fa fa-weixin" aria-hidden="true"></i>
+			</a>
+			<div class="wechatimg"><img src="../index/images/wxqrcode.jpg" alt="刘贝个人博客"></div>
+		</li>
+		<li>
+			<a title="weibo" class="socialicon" href="https://weibo.com/u/7128976719" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-weibo" aria-hidden="true"></i>
+			</a>
+		</li>
+		<li>
+			<a title="qqemail" class="socialicon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HSQkLi0tJSQsK11sbDN_cnA" target="_blank" title="刘贝个人博客">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+	</div>
+	<div class="cr">
+		<div class="cr">
+      <p style="margin-top: 5px;"> © 2016 - 2019 <a href="../index.html"> 刘贝个人博客v4.0</a> 版权所有</p>
+      <p style="margin-top: 5px;">
+	     <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="external nofollow" title="刘贝个人博客：豫ICP备19010773号-1">备案号：豫ICP备19010773号-1</a>
+      </p>
+</div>		<p style="margin-top: 5px;">
+		    <a href="javascript:;" title="刘贝个人博客" id="websiteruntime"></a>
+	    </p>
+	</div>
+</footer>
+	<script type='text/javascript' src='../index/js/plugins.js'></script>
+	<script type='text/javascript' src='../index/js/script.js'></script>
+<!-- 	<script type='text/javascript' src="/index/js/tools.js"></script> -->
+	<script type='text/javascript' src='../index/js/particles.js'></script>
+	<script type='text/javascript' src='../index/js/aos.js'></script>
+	
+
+	<script>
+		document.oncontextmenu = function() {
+		    window.event.returnValue = false;
+		};
+		document.onkeydown=function (e) {
+	        var currKey=0,evt=e||window.event;
+	        currKey=evt.keyCode||evt.which||evt.charCode;
+	        if (currKey == 123) {
+	            window.event.returnValue = false;
+	        }
+	    };
+	</script>
+	<script src="../index/js/base.js?v=8257"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1263460491&web_id=1263460491"></script>
+	</div>
+</body>
+</html>
